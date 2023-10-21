@@ -1,810 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  background-image: url("img/top_bg.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
 </head>
 <body>
-  <div class="l-grid__content l-grid__content--card t-none  u-app-hide" data-layout="Basic Layout" data-content-id="dbb2efd5-0954-45ac-904f-6350e8b93879"><div class="l-grid__content-title u-text-h5">Postseason Leaders</div><div class="l-grid l-grid--gutters"><div class="l-grid__col  l-grid__col--transparent"><div class="l-grid__content"><div class="p-player-leaderboard g5-component--mlb-player-leaderboard styles-sc-ocfzbs-0 styles-sc-7r91sh-0 ktPCLJ jlXtWc g5-component g5-component--is-en g5-component--is-visible" data-content-id="6fc2cd25-9cb2-4ae4-b93f-f19d97ffde48" data-leader-categories="wins,saves,earnedRunAverage,strikeouts,walksAndHitsPerInningPitched,battingAverage,runs,homeRuns,runsBattedIn,stolenBases" data-leader-game-types="P" data-season="2023" data-g5-component-instance="true" data-g5-component-bound="true"><div class="p-navbar-mini" data-cid="">
-    <ul class="p-navbar-mini__nav-list">
-        <li class="p-navbar-mini__nav-item">
-            <a class="p-navbar-mini__nav-link u-text-h5 " href="#hitting">
-            <span class="p-navbar-mini__title">Batting</span>
-            </a>
-        </li>
-        <li class="p-navbar-mini__nav-item p-navbar-mini__nav-item--active">
-            <a class="p-navbar-mini__nav-link u-text-h5 " href="#pitching">
-            <span class="p-navbar-mini__title">Pitching</span>
-            </a>
-        </li>
-    </ul>
+
+<div class="header">
+  <h1>header</h1>
+  <p>Resize the browser window to see the responsive effect.</p>
 </div>
 
-<ul class="g5-component--mlb-player-leaderboard__list">
-        <li class="g5-component--mlb-player-leaderboard__leader g5-component--mlb-player-leaderboard__leader--active" data-type="pitching">
-            <div class="g5-component--mlb-player-leaderboard__leader__image">
-                <a href="/player/cristian-javier-664299">
-                    <img src="https://content.mlb.com/images/headshots/current/60x60/664299@3x.png" onerror="this.onerror=null;this.src='https://content.mlb.com/images/headshots/current/60x60/generic@3x.png';" data-player-name="Cristian Javier">
-                </a>
-            </div>
-            <div class="g5-component--mlb-player-leaderboard__leader__container
-        ">
-                <div class="g5-component--mlb-player-leaderboard__leader__row">
-                    <span class="g5-component--mlb-player-leaderboard__leader__category"><a href="/stats/pitching/wins">Wins</a></span>
-                </div>
-                <div class="g5-component--mlb-player-leaderboard__leader__row">
-                    <span class="g5-component--mlb-player-leaderboard__leader__name">
-                            <a href="/player/cristian-javier-664299">
-                                Cristian Javier
-                            </a>
-                    </span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__name--m-only">
-                        <a href="/player/cristian-javier-664299">
-                            C Javier
-                        </a>
-                    </span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__value">2</span>
-                </div>
-                <div class="g5-component--mlb-player-leaderboard__leader__row">
-                    <span class="g5-component--mlb-player-leaderboard__leader__number">
-                            
-                                
-                                P
-                            <!-- &#8226 -->
-                            <!-- #53 -->
-                    </span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__abbreviation">W</span>
-                </div>
-                <div class="g5-component--mlb-player-leaderboard__leader__row--m-only">
-                    <span class="g5-component--mlb-player-leaderboard__leader__value--m-only">2</span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__abbreviation--m-only">W</span>
-                </div>
-            </div>
-        </li>
-        
-        <li class="g5-component--mlb-player-leaderboard__leader g5-component--mlb-player-leaderboard__leader--active" data-type="pitching">
-            <div class="g5-component--mlb-player-leaderboard__leader__image">
-                <a href="/player/ryan-pressly-519151">
-                    <img src="https://content.mlb.com/images/headshots/current/60x60/519151@3x.png" onerror="this.onerror=null;this.src='https://content.mlb.com/images/headshots/current/60x60/generic@3x.png';" data-player-name="Ryan Pressly">
-                </a>
-            </div>
-            <div class="g5-component--mlb-player-leaderboard__leader__container
-        ">
-                <div class="g5-component--mlb-player-leaderboard__leader__row">
-                    <span class="g5-component--mlb-player-leaderboard__leader__category"><a href="/stats/pitching/saves">Saves</a></span>
-                </div>
-                <div class="g5-component--mlb-player-leaderboard__leader__row">
-                    <span class="g5-component--mlb-player-leaderboard__leader__name">
-                            <a href="/player/ryan-pressly-519151">
-                                Ryan Pressly
-                            </a>
-                    </span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__name--m-only">
-                        <a href="/player/ryan-pressly-519151">
-                            R Pressly
-                        </a>
-                    </span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__value">3</span>
-                </div>
-                <div class="g5-component--mlb-player-leaderboard__leader__row">
-                    <span class="g5-component--mlb-player-leaderboard__leader__number">
-                            
-                                
-                                P
-                            <!-- &#8226 -->
-                            <!-- #55 -->
-                    </span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__abbreviation">SV</span>
-                </div>
-                <div class="g5-component--mlb-player-leaderboard__leader__row--m-only">
-                    <span class="g5-component--mlb-player-leaderboard__leader__value--m-only">3</span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__abbreviation--m-only">SV</span>
-                </div>
-            </div>
-        </li>
-        
-        <li class="g5-component--mlb-player-leaderboard__leader g5-component--mlb-player-leaderboard__leader--active" data-type="pitching">
-            <div class="g5-component--mlb-player-leaderboard__leader__image">
-                <a href="/player/cristian-javier-664299">
-                    <img src="https://content.mlb.com/images/headshots/current/60x60/664299@3x.png" onerror="this.onerror=null;this.src='https://content.mlb.com/images/headshots/current/60x60/generic@3x.png';" data-player-name="Cristian Javier">
-                </a>
-            </div>
-            <div class="g5-component--mlb-player-leaderboard__leader__container
-        ">
-                <div class="g5-component--mlb-player-leaderboard__leader__row">
-                    <span class="g5-component--mlb-player-leaderboard__leader__category"><a href="/stats/pitching/era">Earned Run Average</a></span>
-                </div>
-                <div class="g5-component--mlb-player-leaderboard__leader__row">
-                    <span class="g5-component--mlb-player-leaderboard__leader__name">
-                            <a href="/player/cristian-javier-664299">
-                                Cristian Javier
-                            </a>
-                    </span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__name--m-only">
-                        <a href="/player/cristian-javier-664299">
-                            C Javier
-                        </a>
-                    </span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__value">1.69</span>
-                </div>
-                <div class="g5-component--mlb-player-leaderboard__leader__row">
-                    <span class="g5-component--mlb-player-leaderboard__leader__number">
-                            
-                                
-                                P
-                            <!-- &#8226 -->
-                            <!-- #53 -->
-                    </span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__abbreviation">ERA</span>
-                </div>
-                <div class="g5-component--mlb-player-leaderboard__leader__row--m-only">
-                    <span class="g5-component--mlb-player-leaderboard__leader__value--m-only">1.69</span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__abbreviation--m-only">ERA</span>
-                </div>
-            </div>
-        </li>
-        
-        <li class="g5-component--mlb-player-leaderboard__leader" data-type="catching">
-            <div class="g5-component--mlb-player-leaderboard__leader__image">
-                <a href="/player/martin-maldonado-455117">
-                    <img src="https://content.mlb.com/images/headshots/current/60x60/455117@3x.png" onerror="this.onerror=null;this.src='https://content.mlb.com/images/headshots/current/60x60/generic@3x.png';" data-player-name="Martin Maldonado">
-                </a>
-            </div>
-            <div class="g5-component--mlb-player-leaderboard__leader__container
-        ">
-                <div class="g5-component--mlb-player-leaderboard__leader__row">
-                    <span class="g5-component--mlb-player-leaderboard__leader__category"><a href="/stats/era">Earned Run Average</a></span>
-                </div>
-                <div class="g5-component--mlb-player-leaderboard__leader__row">
-                    <span class="g5-component--mlb-player-leaderboard__leader__name">
-                            <a href="/player/martin-maldonado-455117">
-                                Martín Maldonado
-                            </a>
-                    </span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__name--m-only">
-                        <a href="/player/martin-maldonado-455117">
-                            M Maldonado
-                        </a>
-                    </span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__value">3.88</span>
-                </div>
-                <div class="g5-component--mlb-player-leaderboard__leader__row">
-                    <span class="g5-component--mlb-player-leaderboard__leader__number">
-                            
-                                
-                                C
-                            <!-- &#8226 -->
-                            <!-- #15 -->
-                    </span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__abbreviation">ERA</span>
-                </div>
-                <div class="g5-component--mlb-player-leaderboard__leader__row--m-only">
-                    <span class="g5-component--mlb-player-leaderboard__leader__value--m-only">3.88</span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__abbreviation--m-only">ERA</span>
-                </div>
-            </div>
-        </li>
-        
-        <li class="g5-component--mlb-player-leaderboard__leader g5-component--mlb-player-leaderboard__leader--active" data-type="pitching">
-            <div class="g5-component--mlb-player-leaderboard__leader__image">
-                <a href="/player/justin-verlander-434378">
-                    <img src="https://content.mlb.com/images/headshots/current/60x60/434378@3x.png" onerror="this.onerror=null;this.src='https://content.mlb.com/images/headshots/current/60x60/generic@3x.png';" data-player-name="Justin Verlander">
-                </a>
-            </div>
-            <div class="g5-component--mlb-player-leaderboard__leader__container
-        ">
-                <div class="g5-component--mlb-player-leaderboard__leader__row">
-                    <span class="g5-component--mlb-player-leaderboard__leader__category"><a href="/stats/pitching/strikeouts">Strikeouts</a></span>
-                </div>
-                <div class="g5-component--mlb-player-leaderboard__leader__row">
-                    <span class="g5-component--mlb-player-leaderboard__leader__name">
-                            <a href="/player/justin-verlander-434378">
-                                Justin Verlander
-                            </a>
-                    </span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__name--m-only">
-                        <a href="/player/justin-verlander-434378">
-                            J Verlander
-                        </a>
-                    </span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__value">14</span>
-                </div>
-                <div class="g5-component--mlb-player-leaderboard__leader__row">
-                    <span class="g5-component--mlb-player-leaderboard__leader__number">
-                            
-                                
-                                P
-                            <!-- &#8226 -->
-                            <!-- #35 -->
-                    </span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__abbreviation">SO</span>
-                </div>
-                <div class="g5-component--mlb-player-leaderboard__leader__row--m-only">
-                    <span class="g5-component--mlb-player-leaderboard__leader__value--m-only">14</span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__abbreviation--m-only">SO</span>
-                </div>
-            </div>
-        </li>
-        
-        <li class="g5-component--mlb-player-leaderboard__leader" data-type="catching">
-            <div class="g5-component--mlb-player-leaderboard__leader__image">
-                <a href="/player/martin-maldonado-455117">
-                    <img src="https://content.mlb.com/images/headshots/current/60x60/455117@3x.png" onerror="this.onerror=null;this.src='https://content.mlb.com/images/headshots/current/60x60/generic@3x.png';" data-player-name="Martin Maldonado">
-                </a>
-            </div>
-            <div class="g5-component--mlb-player-leaderboard__leader__container
-        ">
-                <div class="g5-component--mlb-player-leaderboard__leader__row">
-                    <span class="g5-component--mlb-player-leaderboard__leader__category"><a href="/stats/strikeouts">Strikeouts</a></span>
-                </div>
-                <div class="g5-component--mlb-player-leaderboard__leader__row">
-                    <span class="g5-component--mlb-player-leaderboard__leader__name">
-                            <a href="/player/martin-maldonado-455117">
-                                Martín Maldonado
-                            </a>
-                    </span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__name--m-only">
-                        <a href="/player/martin-maldonado-455117">
-                            M Maldonado
-                        </a>
-                    </span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__value">77</span>
-                </div>
-                <div class="g5-component--mlb-player-leaderboard__leader__row">
-                    <span class="g5-component--mlb-player-leaderboard__leader__number">
-                            
-                                
-                                C
-                            <!-- &#8226 -->
-                            <!-- #15 -->
-                    </span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__abbreviation">SO</span>
-                </div>
-                <div class="g5-component--mlb-player-leaderboard__leader__row--m-only">
-                    <span class="g5-component--mlb-player-leaderboard__leader__value--m-only">77</span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__abbreviation--m-only">SO</span>
-                </div>
-            </div>
-        </li>
-        
-        <li class="g5-component--mlb-player-leaderboard__leader g5-component--mlb-player-leaderboard__leader--active" data-type="pitching">
-            <div class="g5-component--mlb-player-leaderboard__leader__image">
-                <a href="/player/cristian-javier-664299">
-                    <img src="https://content.mlb.com/images/headshots/current/60x60/664299@3x.png" onerror="this.onerror=null;this.src='https://content.mlb.com/images/headshots/current/60x60/generic@3x.png';" data-player-name="Cristian Javier">
-                </a>
-            </div>
-            <div class="g5-component--mlb-player-leaderboard__leader__container
-                    g5-component--mlb-player-leaderboard__leader__container--last
-                ">
-                <div class="g5-component--mlb-player-leaderboard__leader__row">
-                    <span class="g5-component--mlb-player-leaderboard__leader__category"><a href="/stats/pitching/whip">WHIP</a></span>
-                </div>
-                <div class="g5-component--mlb-player-leaderboard__leader__row">
-                    <span class="g5-component--mlb-player-leaderboard__leader__name">
-                            <a href="/player/cristian-javier-664299">
-                                Cristian Javier
-                            </a>
-                    </span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__name--m-only">
-                        <a href="/player/cristian-javier-664299">
-                            C Javier
-                        </a>
-                    </span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__value">0.94</span>
-                </div>
-                <div class="g5-component--mlb-player-leaderboard__leader__row">
-                    <span class="g5-component--mlb-player-leaderboard__leader__number">
-                            
-                                
-                                P
-                            <!-- &#8226 -->
-                            <!-- #53 -->
-                    </span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__abbreviation">WHIP</span>
-                </div>
-                <div class="g5-component--mlb-player-leaderboard__leader__row--m-only">
-                    <span class="g5-component--mlb-player-leaderboard__leader__value--m-only">0.94</span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__abbreviation--m-only">WHIP</span>
-                </div>
-            </div>
-        </li>
-        
-        <li class="g5-component--mlb-player-leaderboard__leader" data-type="catching">
-            <div class="g5-component--mlb-player-leaderboard__leader__image">
-                <a href="/player/martin-maldonado-455117">
-                    <img src="https://content.mlb.com/images/headshots/current/60x60/455117@3x.png" onerror="this.onerror=null;this.src='https://content.mlb.com/images/headshots/current/60x60/generic@3x.png';" data-player-name="Martin Maldonado">
-                </a>
-            </div>
-            <div class="g5-component--mlb-player-leaderboard__leader__container
-        ">
-                <div class="g5-component--mlb-player-leaderboard__leader__row">
-                    <span class="g5-component--mlb-player-leaderboard__leader__category"><a href="/stats/whip">WHIP</a></span>
-                </div>
-                <div class="g5-component--mlb-player-leaderboard__leader__row">
-                    <span class="g5-component--mlb-player-leaderboard__leader__name">
-                            <a href="/player/martin-maldonado-455117">
-                                Martín Maldonado
-                            </a>
-                    </span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__name--m-only">
-                        <a href="/player/martin-maldonado-455117">
-                            M Maldonado
-                        </a>
-                    </span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__value">1.18</span>
-                </div>
-                <div class="g5-component--mlb-player-leaderboard__leader__row">
-                    <span class="g5-component--mlb-player-leaderboard__leader__number">
-                            
-                                
-                                C
-                            <!-- &#8226 -->
-                            <!-- #15 -->
-                    </span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__abbreviation">WHIP</span>
-                </div>
-                <div class="g5-component--mlb-player-leaderboard__leader__row--m-only">
-                    <span class="g5-component--mlb-player-leaderboard__leader__value--m-only">1.18</span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__abbreviation--m-only">WHIP</span>
-                </div>
-            </div>
-        </li>
-        
-        <li class="g5-component--mlb-player-leaderboard__leader" data-type="hitting">
-            <div class="g5-component--mlb-player-leaderboard__leader__image">
-                <a href="/player/yordan-alvarez-670541">
-                    <img src="https://content.mlb.com/images/headshots/current/60x60/670541@3x.png" onerror="this.onerror=null;this.src='https://content.mlb.com/images/headshots/current/60x60/generic@3x.png';" data-player-name="Yordan Alvarez">
-                </a>
-            </div>
-            <div class="g5-component--mlb-player-leaderboard__leader__container
-        ">
-                <div class="g5-component--mlb-player-leaderboard__leader__row">
-                    <span class="g5-component--mlb-player-leaderboard__leader__category"><a href="/stats/batting-average">Batting Average</a></span>
-                </div>
-                <div class="g5-component--mlb-player-leaderboard__leader__row">
-                    <span class="g5-component--mlb-player-leaderboard__leader__name">
-                            <a href="/player/yordan-alvarez-670541">
-                                Yordan Alvarez
-                            </a>
-                    </span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__name--m-only">
-                        <a href="/player/yordan-alvarez-670541">
-                            Y Alvarez
-                        </a>
-                    </span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__value">.417</span>
-                </div>
-                <div class="g5-component--mlb-player-leaderboard__leader__row">
-                    <span class="g5-component--mlb-player-leaderboard__leader__number">
-                            
-                                
-                                LF
-                            <!-- &#8226 -->
-                            <!-- #44 -->
-                    </span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__abbreviation">AVG</span>
-                </div>
-                <div class="g5-component--mlb-player-leaderboard__leader__row--m-only">
-                    <span class="g5-component--mlb-player-leaderboard__leader__value--m-only">.417</span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__abbreviation--m-only">AVG</span>
-                </div>
-            </div>
-        </li>
-        
-        <li class="g5-component--mlb-player-leaderboard__leader" data-type="catching">
-            <div class="g5-component--mlb-player-leaderboard__leader__image">
-                <a href="/player/martin-maldonado-455117">
-                    <img src="https://content.mlb.com/images/headshots/current/60x60/455117@3x.png" onerror="this.onerror=null;this.src='https://content.mlb.com/images/headshots/current/60x60/generic@3x.png';" data-player-name="Martin Maldonado">
-                </a>
-            </div>
-            <div class="g5-component--mlb-player-leaderboard__leader__container
-        ">
-                <div class="g5-component--mlb-player-leaderboard__leader__row">
-                    <span class="g5-component--mlb-player-leaderboard__leader__category"><a href="/stats/batting-average">Batting Average</a></span>
-                </div>
-                <div class="g5-component--mlb-player-leaderboard__leader__row">
-                    <span class="g5-component--mlb-player-leaderboard__leader__name">
-                            <a href="/player/martin-maldonado-455117">
-                                Martín Maldonado
-                            </a>
-                    </span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__name--m-only">
-                        <a href="/player/martin-maldonado-455117">
-                            M Maldonado
-                        </a>
-                    </span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__value">.221</span>
-                </div>
-                <div class="g5-component--mlb-player-leaderboard__leader__row">
-                    <span class="g5-component--mlb-player-leaderboard__leader__number">
-                            
-                                
-                                C
-                            <!-- &#8226 -->
-                            <!-- #15 -->
-                    </span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__abbreviation">AVG</span>
-                </div>
-                <div class="g5-component--mlb-player-leaderboard__leader__row--m-only">
-                    <span class="g5-component--mlb-player-leaderboard__leader__value--m-only">.221</span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__abbreviation--m-only">AVG</span>
-                </div>
-            </div>
-        </li>
-        
-        <li class="g5-component--mlb-player-leaderboard__leader" data-type="hitting">
-            <div class="g5-component--mlb-player-leaderboard__leader__image">
-                <a href="/player/yordan-alvarez-670541">
-                    <img src="https://content.mlb.com/images/headshots/current/60x60/670541@3x.png" onerror="this.onerror=null;this.src='https://content.mlb.com/images/headshots/current/60x60/generic@3x.png';" data-player-name="Yordan Alvarez">
-                </a>
-            </div>
-            <div class="g5-component--mlb-player-leaderboard__leader__container
-        ">
-                <div class="g5-component--mlb-player-leaderboard__leader__row">
-                    <span class="g5-component--mlb-player-leaderboard__leader__category"><a href="/stats/runs">Runs</a></span>
-                </div>
-                <div class="g5-component--mlb-player-leaderboard__leader__row">
-                    <span class="g5-component--mlb-player-leaderboard__leader__name">
-                            <a href="/player/yordan-alvarez-670541">
-                                Yordan Alvarez
-                            </a>
-                    </span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__name--m-only">
-                        <a href="/player/yordan-alvarez-670541">
-                            Y Alvarez
-                        </a>
-                    </span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__value">11</span>
-                </div>
-                <div class="g5-component--mlb-player-leaderboard__leader__row">
-                    <span class="g5-component--mlb-player-leaderboard__leader__number">
-                            
-                                
-                                LF
-                            <!-- &#8226 -->
-                            <!-- #44 -->
-                    </span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__abbreviation">R</span>
-                </div>
-                <div class="g5-component--mlb-player-leaderboard__leader__row--m-only">
-                    <span class="g5-component--mlb-player-leaderboard__leader__value--m-only">11</span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__abbreviation--m-only">R</span>
-                </div>
-            </div>
-        </li>
-        
-        <li class="g5-component--mlb-player-leaderboard__leader" data-type="catching">
-            <div class="g5-component--mlb-player-leaderboard__leader__image">
-                <a href="/player/martin-maldonado-455117">
-                    <img src="https://content.mlb.com/images/headshots/current/60x60/455117@3x.png" onerror="this.onerror=null;this.src='https://content.mlb.com/images/headshots/current/60x60/generic@3x.png';" data-player-name="Martin Maldonado">
-                </a>
-            </div>
-            <div class="g5-component--mlb-player-leaderboard__leader__container
-        ">
-                <div class="g5-component--mlb-player-leaderboard__leader__row">
-                    <span class="g5-component--mlb-player-leaderboard__leader__category"><a href="/stats/runs">Runs</a></span>
-                </div>
-                <div class="g5-component--mlb-player-leaderboard__leader__row">
-                    <span class="g5-component--mlb-player-leaderboard__leader__name">
-                            <a href="/player/martin-maldonado-455117">
-                                Martín Maldonado
-                            </a>
-                    </span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__name--m-only">
-                        <a href="/player/martin-maldonado-455117">
-                            M Maldonado
-                        </a>
-                    </span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__value">32</span>
-                </div>
-                <div class="g5-component--mlb-player-leaderboard__leader__row">
-                    <span class="g5-component--mlb-player-leaderboard__leader__number">
-                            
-                                
-                                C
-                            <!-- &#8226 -->
-                            <!-- #15 -->
-                    </span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__abbreviation">R</span>
-                </div>
-                <div class="g5-component--mlb-player-leaderboard__leader__row--m-only">
-                    <span class="g5-component--mlb-player-leaderboard__leader__value--m-only">32</span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__abbreviation--m-only">R</span>
-                </div>
-            </div>
-        </li>
-        
-        <li class="g5-component--mlb-player-leaderboard__leader" data-type="hitting">
-            <div class="g5-component--mlb-player-leaderboard__leader__image">
-                <a href="/player/yordan-alvarez-670541">
-                    <img src="https://content.mlb.com/images/headshots/current/60x60/670541@3x.png" onerror="this.onerror=null;this.src='https://content.mlb.com/images/headshots/current/60x60/generic@3x.png';" data-player-name="Yordan Alvarez">
-                </a>
-            </div>
-            <div class="g5-component--mlb-player-leaderboard__leader__container
-        ">
-                <div class="g5-component--mlb-player-leaderboard__leader__row">
-                    <span class="g5-component--mlb-player-leaderboard__leader__category"><a href="/stats/home-runs">Home Runs</a></span>
-                </div>
-                <div class="g5-component--mlb-player-leaderboard__leader__row">
-                    <span class="g5-component--mlb-player-leaderboard__leader__name">
-                            <a href="/player/yordan-alvarez-670541">
-                                Yordan Alvarez
-                            </a>
-                    </span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__name--m-only">
-                        <a href="/player/yordan-alvarez-670541">
-                            Y Alvarez
-                        </a>
-                    </span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__value">6</span>
-                </div>
-                <div class="g5-component--mlb-player-leaderboard__leader__row">
-                    <span class="g5-component--mlb-player-leaderboard__leader__number">
-                            
-                                
-                                LF
-                            <!-- &#8226 -->
-                            <!-- #44 -->
-                    </span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__abbreviation">HR</span>
-                </div>
-                <div class="g5-component--mlb-player-leaderboard__leader__row--m-only">
-                    <span class="g5-component--mlb-player-leaderboard__leader__value--m-only">6</span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__abbreviation--m-only">HR</span>
-                </div>
-            </div>
-        </li>
-        
-        <li class="g5-component--mlb-player-leaderboard__leader" data-type="catching">
-            <div class="g5-component--mlb-player-leaderboard__leader__image">
-                <a href="/player/martin-maldonado-455117">
-                    <img src="https://content.mlb.com/images/headshots/current/60x60/455117@3x.png" onerror="this.onerror=null;this.src='https://content.mlb.com/images/headshots/current/60x60/generic@3x.png';" data-player-name="Martin Maldonado">
-                </a>
-            </div>
-            <div class="g5-component--mlb-player-leaderboard__leader__container
-        ">
-                <div class="g5-component--mlb-player-leaderboard__leader__row">
-                    <span class="g5-component--mlb-player-leaderboard__leader__category"><a href="/stats/home-runs">Home Runs</a></span>
-                </div>
-                <div class="g5-component--mlb-player-leaderboard__leader__row">
-                    <span class="g5-component--mlb-player-leaderboard__leader__name">
-                            <a href="/player/martin-maldonado-455117">
-                                Martín Maldonado
-                            </a>
-                    </span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__name--m-only">
-                        <a href="/player/martin-maldonado-455117">
-                            M Maldonado
-                        </a>
-                    </span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__value">13</span>
-                </div>
-                <div class="g5-component--mlb-player-leaderboard__leader__row">
-                    <span class="g5-component--mlb-player-leaderboard__leader__number">
-                            
-                                
-                                C
-                            <!-- &#8226 -->
-                            <!-- #15 -->
-                    </span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__abbreviation">HR</span>
-                </div>
-                <div class="g5-component--mlb-player-leaderboard__leader__row--m-only">
-                    <span class="g5-component--mlb-player-leaderboard__leader__value--m-only">13</span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__abbreviation--m-only">HR</span>
-                </div>
-            </div>
-        </li>
-        
-        <li class="g5-component--mlb-player-leaderboard__leader" data-type="hitting">
-            <div class="g5-component--mlb-player-leaderboard__leader__image">
-                <a href="/player/yordan-alvarez-670541">
-                    <img src="https://content.mlb.com/images/headshots/current/60x60/670541@3x.png" onerror="this.onerror=null;this.src='https://content.mlb.com/images/headshots/current/60x60/generic@3x.png';" data-player-name="Yordan Alvarez">
-                </a>
-            </div>
-            <div class="g5-component--mlb-player-leaderboard__leader__container
-        ">
-                <div class="g5-component--mlb-player-leaderboard__leader__row">
-                    <span class="g5-component--mlb-player-leaderboard__leader__category"><a href="/stats/rbi">Runs Batted In</a></span>
-                </div>
-                <div class="g5-component--mlb-player-leaderboard__leader__row">
-                    <span class="g5-component--mlb-player-leaderboard__leader__name">
-                            <a href="/player/yordan-alvarez-670541">
-                                Yordan Alvarez
-                            </a>
-                    </span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__name--m-only">
-                        <a href="/player/yordan-alvarez-670541">
-                            Y Alvarez
-                        </a>
-                    </span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__value">13</span>
-                </div>
-                <div class="g5-component--mlb-player-leaderboard__leader__row">
-                    <span class="g5-component--mlb-player-leaderboard__leader__number">
-                            
-                                
-                                LF
-                            <!-- &#8226 -->
-                            <!-- #44 -->
-                    </span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__abbreviation">RBI</span>
-                </div>
-                <div class="g5-component--mlb-player-leaderboard__leader__row--m-only">
-                    <span class="g5-component--mlb-player-leaderboard__leader__value--m-only">13</span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__abbreviation--m-only">RBI</span>
-                </div>
-            </div>
-        </li>
-        
-        <li class="g5-component--mlb-player-leaderboard__leader" data-type="hitting">
-            <div class="g5-component--mlb-player-leaderboard__leader__image">
-                <a href="/player/jose-abreu-547989">
-                    <img src="https://content.mlb.com/images/headshots/current/60x60/547989@3x.png" onerror="this.onerror=null;this.src='https://content.mlb.com/images/headshots/current/60x60/generic@3x.png';" data-player-name="Jose Abreu">
-                </a>
-            </div>
-            <div class="g5-component--mlb-player-leaderboard__leader__container
-        ">
-                <div class="g5-component--mlb-player-leaderboard__leader__row">
-                    <span class="g5-component--mlb-player-leaderboard__leader__category"><a href="/stats/stolen-bases">Stolen Bases</a></span>
-                </div>
-                <div class="g5-component--mlb-player-leaderboard__leader__row">
-                    <span class="g5-component--mlb-player-leaderboard__leader__name">
-                            <a href="/player/jose-abreu-547989">
-                                José Abreu
-                            </a>
-                    </span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__name--m-only">
-                        <a href="/player/jose-abreu-547989">
-                            J Abreu
-                        </a>
-                    </span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__value">1</span>
-                </div>
-                <div class="g5-component--mlb-player-leaderboard__leader__row">
-                    <span class="g5-component--mlb-player-leaderboard__leader__number">
-                            
-                                
-                                1B
-                            <!-- &#8226 -->
-                            <!-- #79 -->
-                    </span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__abbreviation">SB</span>
-                </div>
-                <div class="g5-component--mlb-player-leaderboard__leader__row--m-only">
-                    <span class="g5-component--mlb-player-leaderboard__leader__value--m-only">1</span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__abbreviation--m-only">SB</span>
-                </div>
-            </div>
-        </li>
-        
-        <li class="g5-component--mlb-player-leaderboard__leader" data-type="hitting">
-            <div class="g5-component--mlb-player-leaderboard__leader__image">
-                <a href="/player/michael-brantley-488726">
-                    <img src="https://content.mlb.com/images/headshots/current/60x60/488726@3x.png" onerror="this.onerror=null;this.src='https://content.mlb.com/images/headshots/current/60x60/generic@3x.png';" data-player-name="Michael Brantley">
-                </a>
-            </div>
-            <div class="g5-component--mlb-player-leaderboard__leader__container
-                    g5-component--mlb-player-leaderboard__leader__container--last
-                ">
-                <div class="g5-component--mlb-player-leaderboard__leader__row">
-                    <span class="g5-component--mlb-player-leaderboard__leader__category"><a href="/stats/stolen-bases">Stolen Bases</a></span>
-                </div>
-                <div class="g5-component--mlb-player-leaderboard__leader__row">
-                    <span class="g5-component--mlb-player-leaderboard__leader__name">
-                            <a href="/player/michael-brantley-488726">
-                                Michael Brantley
-                            </a>
-                    </span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__name--m-only">
-                        <a href="/player/michael-brantley-488726">
-                            M Brantley
-                        </a>
-                    </span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__value">1</span>
-                </div>
-                <div class="g5-component--mlb-player-leaderboard__leader__row">
-                    <span class="g5-component--mlb-player-leaderboard__leader__number">
-                            
-                                
-                                DH
-                            <!-- &#8226 -->
-                            <!-- #23 -->
-                    </span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__abbreviation">SB</span>
-                </div>
-                <div class="g5-component--mlb-player-leaderboard__leader__row--m-only">
-                    <span class="g5-component--mlb-player-leaderboard__leader__value--m-only">1</span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__abbreviation--m-only">SB</span>
-                </div>
-            </div>
-        </li>
-        
-        <li class="g5-component--mlb-player-leaderboard__leader" data-type="fielding">
-            <div class="g5-component--mlb-player-leaderboard__leader__image">
-                <a href="/player/martin-maldonado-455117">
-                    <img src="https://content.mlb.com/images/headshots/current/60x60/455117@3x.png" onerror="this.onerror=null;this.src='https://content.mlb.com/images/headshots/current/60x60/generic@3x.png';" data-player-name="Martin Maldonado">
-                </a>
-            </div>
-            <div class="g5-component--mlb-player-leaderboard__leader__container
-        ">
-                <div class="g5-component--mlb-player-leaderboard__leader__row">
-                    <span class="g5-component--mlb-player-leaderboard__leader__category"><a href="/stats/stolen-bases">Stolen Bases</a></span>
-                </div>
-                <div class="g5-component--mlb-player-leaderboard__leader__row">
-                    <span class="g5-component--mlb-player-leaderboard__leader__name">
-                            <a href="/player/martin-maldonado-455117">
-                                Martín Maldonado
-                            </a>
-                    </span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__name--m-only">
-                        <a href="/player/martin-maldonado-455117">
-                            M Maldonado
-                        </a>
-                    </span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__value">2</span>
-                </div>
-                <div class="g5-component--mlb-player-leaderboard__leader__row">
-                    <span class="g5-component--mlb-player-leaderboard__leader__number">
-                            
-                                
-                                C
-                            <!-- &#8226 -->
-                            <!-- #15 -->
-                    </span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__abbreviation">SB</span>
-                </div>
-                <div class="g5-component--mlb-player-leaderboard__leader__row--m-only">
-                    <span class="g5-component--mlb-player-leaderboard__leader__value--m-only">2</span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__abbreviation--m-only">SB</span>
-                </div>
-            </div>
-        </li>
-        
-        <li class="g5-component--mlb-player-leaderboard__leader" data-type="catching">
-            <div class="g5-component--mlb-player-leaderboard__leader__image">
-                <a href="/player/martin-maldonado-455117">
-                    <img src="https://content.mlb.com/images/headshots/current/60x60/455117@3x.png" onerror="this.onerror=null;this.src='https://content.mlb.com/images/headshots/current/60x60/generic@3x.png';" data-player-name="Martin Maldonado">
-                </a>
-            </div>
-            <div class="g5-component--mlb-player-leaderboard__leader__container
-        ">
-                <div class="g5-component--mlb-player-leaderboard__leader__row">
-                    <span class="g5-component--mlb-player-leaderboard__leader__category"><a href="/stats/stolen-bases">Stolen Bases</a></span>
-                </div>
-                <div class="g5-component--mlb-player-leaderboard__leader__row">
-                    <span class="g5-component--mlb-player-leaderboard__leader__name">
-                            <a href="/player/martin-maldonado-455117">
-                                Martín Maldonado
-                            </a>
-                    </span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__name--m-only">
-                        <a href="/player/martin-maldonado-455117">
-                            M Maldonado
-                        </a>
-                    </span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__value">2</span>
-                </div>
-                <div class="g5-component--mlb-player-leaderboard__leader__row">
-                    <span class="g5-component--mlb-player-leaderboard__leader__number">
-                            
-                                
-                                C
-                            <!-- &#8226 -->
-                            <!-- #15 -->
-                    </span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__abbreviation">SB</span>
-                </div>
-                <div class="g5-component--mlb-player-leaderboard__leader__row--m-only">
-                    <span class="g5-component--mlb-player-leaderboard__leader__value--m-only">2</span>
-                    <span class="g5-component--mlb-player-leaderboard__leader__abbreviation--m-only">SB</span>
-                </div>
-            </div>
-        </li>
-        
-</ul>
-</div><div class="p-more-link" data-content-id="8c8900ab-997d-4e93-abfc-447078204d4e"><a class="p-text-more-link" href="/astros/stats/postseason-cumulative" data-phone-href="/stats">Sortable Stats</a></div></div></div></div></div>
+<div class="topnav">
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+</div>
+
+<div class="row">
+  <div class="column">
+    <h2>Column</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+  </div>
   
+  <div class="column">
+    <h2>Column</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+  </div>
+  
+  <div class="column">
+    <h2>Column</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+  </div>
+</div>
+
 </body>
 </html>
