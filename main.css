@@ -1,12 +1,24 @@
 * {box-sizing: border-box}
-body {margin:0}
-.mySlides {display: none}
+
+body {
+  margin:0;
+  font-family: 'Heiti TC', '黑體-繁', 'Microsoft JhengHei', '微軟正黑體', sans-serif;
+  background-color: #EB6E1F;
+  position: relative;
+  /* border: red solid 2px; */
+}
+
+.mySlides {
+  display: none;
+
+}
 img {vertical-align: middle;}
+
 
   .topnav {
     display: flex;
     overflow: hidden;
-    height: 10vh;
+    height: 7vh;
     background-color: #002D62;
     align-items: center;
   }
@@ -16,6 +28,7 @@ img {vertical-align: middle;}
       width: 5vw;
       margin-right: 0.5em;
       margin-left: 0.5em;
+      
   }
   
   .topnav a {
@@ -34,41 +47,95 @@ img {vertical-align: middle;}
     color: white;
     font-size: 1.4em;
   }
-  
-  
 
-#nav-bot{
-    border: red solid 2px;
-    background-color:#EB6E1F; ;
-    width: 100%;
-    /* height: 50%; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: none;
+  transition: background-color 0.6s ease;
 }
-#nav-bot>img{
-    /* border: red solid 2px; */
-    object-fit: cover;
+
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
 }
 
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  /* max-width: 100%; */
+  /* height: 100%; */
+  width: 60%;
   position: relative;
-  margin: auto;
-  /* border: red 2px solid; */
+  margin: 0;
+  order: 2;
+  border: red solid 2px;
+}
+
+.slideshow-container img{
+  /* height: 100%; */
+  width: 100%;
 }
 
 
-@keyframes slide-in-from-left {
-  50% { tranform: translate(-100%); }
-  100% { transform: translateX(0%); }
+
+table {
+  width: 20%;
+  position: relative;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border-left: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  background-color: white;
+  order: 1;
+  
 }
 
-.slide-in-from-left {
-  animation: slide-in-from-left 1s forwards;
+th, td {
+  text-align: center;
+  padding: 0.5em;
 }
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.tb_img{
+  height: 5vh;
+  width: 5vh;
+}
+
+tr th{
+  color: black;
+  background-color: ghostwhite;
+  height: 5vh;
+}
+
+#under-nav{
+  border: black solid 2px;
+  /* float: left; */
+  display: flex;
+  flex-wrap: nowrap;
+  
+}
+
+.grid-container{
+  order: 3;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
 
 
