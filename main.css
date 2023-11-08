@@ -1,7 +1,111 @@
+body {
+  margin: 0;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  /* background-color: rgb(236,236,236); */
+  background-image: url("./img/background.jpeg");
+  background-repeat: repeat;
+}
+html{
+  height:100%
+}
+* {
+  box-sizing: border-box;
+}
+
+.topnav {
+  background-color: #C0111F;
+  overflow: hidden;
+  /* border: black 2px solid; */
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+.topnav a {
+  float: left;
+  color: gainsboro;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 23px;
+  /* border: black 2px solid; */
+  margin-left: 20px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: whitesmoke;
+  
+}
 
 
+div>a>img{
+  min-height: 40px;
+  max-height: 40px;
+}
 
+#logocom{
+  margin-left: auto;
+}
 
+#goandtake img{
+  max-height: 56px;
+  /* border: black 2px solid; */
+}
+
+#goandtake{
+  flex: 1 1 auto;
+  align-items: center;
+}
+
+#navabove{
+  display: flex;
+  height: 56px;
+  justify-content: flex-end;
+  flex: 99 1 45%
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  height: 570px;
+  display: flex;
+  align-items: center;
+  /* border-left: #003278 solid 5px; */
+  /* border-right: #003278 solid 5px; */
+  background-color: #003278;
+  position: relative;
+  margin: auto;
+  /* background-image: url("./img/background.jpeg"); */
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+.mySlides > img{
+  width: 100%;
+  /* min-height: 540px; */
+  object-fit: contain;
+  /* border: red 3px solid; */
+}
+
+#bracket{
+  text-align: center;
+  /* border: rebeccapurple 2px solid; */
+}
+#bracket > h1{
+  color: white;
+  font-size: 3em;
+}
+
+#bracket > img{
+  width: 100%;
+  max-width: 1500px;
+  height: auto;
+  
+
+}
 
 
 
