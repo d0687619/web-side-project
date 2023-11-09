@@ -28,6 +28,8 @@ html{
   padding: 14px 16px;
   text-decoration: none;
   font-size: 23px;
+  font-weight: bolder;
+  text-shadow: 1px 1px black;
   /* border: black 2px solid; */
   margin-left: 20px;
 }
@@ -40,12 +42,16 @@ html{
 
 
 div>a>img{
-  min-height: 40px;
-  max-height: 40px;
+  min-height: 50px;
+  max-height: 50px;
+  top: auto;
+  /* border: 2px black solid; */
 }
 
 #logocom{
   margin-left: auto;
+  /* border: 2px solid black; */
+  
 }
 
 #goandtake img{
@@ -122,19 +128,25 @@ div>a>img{
   height: auto;
 }
 
-#standings{
-  display: flex;
-}
 
 #standings {
   display: flex;
   margin-left:-5px;
   margin-right:-5px;
+  /* padding-bottom: 5px; */
+  /* border: red 3px solid; */
+}
+
+td >img{
+  height: 3rem;
+  width: 3rem;
+  /* border: red 3px solid; */
 }
 
 .column {
   flex: 50%;
   padding: 5px;
+  /* border: black solid 3px; */
 }
 
 table {
@@ -145,13 +157,44 @@ table {
   background-color: white;
 }
 
+
 th, td {
-  text-align: left;
+  text-align: center;
   padding: 16px;
 }
 
 tr:nth-child(even) {
   background-color: #f2f2f2;
+}
+
+table caption{
+  color:white;
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+#wctb tr:nth-child(4){
+  border-bottom: black dotted 2px;
+}
+
+#alwtb{
+  border-bottom: 3px solid transparent;
+}
+
+.jquery-ui {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tabJoined {
+  flex: 50%;
+}
+
+@media (max-width: 800px) {
+  .tabJoined {
+    flex: 100%;
+  }
 }
 
 

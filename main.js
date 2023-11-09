@@ -13,3 +13,19 @@ function showSlides() {
   setTimeout(showSlides, 3000); 
 }
 
+
+$( function() {
+  $( "#tabs" ).tabs();
+} );
+
+$(function() {
+  $(".tabJoined").tabs({
+    activate: function(e, ui) {
+      var source = $(this);
+      console.log(source);
+      var target = $(".tabJoined").not(source);
+      // var tInd = source.tabs("option", "active");
+      // target.tabs("widget").find(".ui-tabs-anchor:eq(" + tInd + ")").click();
+    }
+  });
+});
