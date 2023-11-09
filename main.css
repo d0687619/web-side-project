@@ -101,12 +101,58 @@ div>a>img{
 
 #bracket > img{
   width: 100%;
-  max-width: 1500px;
+  /* max-width: 1500px; */
   height: auto;
-  
-
 }
 
+.outercontainer{
+  /* border: red 3px solid; */
+  max-width: 1200px;
+  margin: auto;
+  background-color: #003278;
+}
+
+#appad{
+  /* border: red 3px solid; */
+  margin: auto 10px;
+}
+
+#appad > img{
+  width: 100%;
+  height: auto;
+}
+
+#standings{
+  display: flex;
+}
+
+#standings {
+  display: flex;
+  margin-left:-5px;
+  margin-right:-5px;
+}
+
+.column {
+  flex: 50%;
+  padding: 5px;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+  background-color: white;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
 
 
 
