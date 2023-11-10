@@ -125,7 +125,7 @@ div>a>img {
 
 #appad {
   /* border: red 3px solid; */
-  margin: auto 10px;
+  margin: auto 0;
 }
 
 #appad>img {
