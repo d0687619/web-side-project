@@ -150,6 +150,18 @@ body {
     width: 120px;
  }
 
+ #tim{
+    width: 180px;
+ }
+
+ #ecker{
+    width: 155px;
+ }
+
+ #maddux{
+    width: 180px;
+ }
+
 .grid-item a{
     display: block;
     /* border: red 2px solid; */
