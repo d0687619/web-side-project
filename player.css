@@ -83,7 +83,7 @@ body {
   }
 
   .top-bg{
-    border: rebeccapurple 2px solid;
+    /* border: rebeccapurple 2px solid; */
     text-align: center;
   }
 
@@ -122,8 +122,8 @@ body {
 
  .grid-container{
     display: grid;
-    grid-template-columns: 180px 180px 180px 180px 180px;
-    gap: 30px;
+    grid-template-columns: 185px 185px 185px 185px 185px;
+    gap: 35px;
     background-color: #003278;
     padding: 10px;
     justify-content: center;
@@ -140,7 +140,7 @@ body {
 
  .grid-item span{
     /* display: flex; */
-    font-size: 22px;
+    font-size: 18px;
     font-weight: bolder;
     color: black;
  }
