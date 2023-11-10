@@ -5,10 +5,13 @@ body {
   /* background-color: rgb(236,236,236); */
   background-image: url("./img/background.jpeg");
   background-repeat: repeat;
+  /* background-size:100%; */
 }
-html{
-  height:100%
+
+html {
+  height: 100%
 }
+
 * {
   box-sizing: border-box;
 }
@@ -21,6 +24,7 @@ html{
   /* justify-content: center; */
   align-items: center;
 }
+
 .topnav a {
   float: left;
   color: gainsboro;
@@ -37,34 +41,34 @@ html{
 /* Change the color of links on hover */
 .topnav a:hover {
   color: whitesmoke;
-  
+
 }
 
 
-div>a>img{
+div>a>img {
   min-height: 50px;
   max-height: 50px;
   top: auto;
   /* border: 2px black solid; */
 }
 
-#logocom{
+#logocom {
   margin-left: auto;
   /* border: 2px solid black; */
-  
+
 }
 
-#goandtake img{
+#goandtake img {
   max-height: 56px;
   /* border: black 2px solid; */
 }
 
-#goandtake{
+#goandtake {
   flex: 1 1 auto;
   align-items: center;
 }
 
-#navabove{
+#navabove {
   display: flex;
   height: 56px;
   justify-content: flex-end;
@@ -89,41 +93,42 @@ div>a>img{
   display: none;
 }
 
-.mySlides > img{
+.mySlides>img {
   width: 100%;
   /* min-height: 540px; */
   object-fit: contain;
   /* border: red 3px solid; */
 }
 
-#bracket{
+#bracket {
   text-align: center;
   /* border: rebeccapurple 2px solid; */
 }
-#bracket > h1{
+
+#bracket>h1 {
   color: white;
   font-size: 3em;
 }
 
-#bracket > img{
+#bracket>img {
   width: 100%;
   /* max-width: 1500px; */
   height: auto;
 }
 
-.outercontainer{
+.outercontainer {
   /* border: red 3px solid; */
   max-width: 1200px;
   margin: auto;
   background-color: #003278;
 }
 
-#appad{
+#appad {
   /* border: red 3px solid; */
   margin: auto 10px;
 }
 
-#appad > img{
+#appad>img {
   width: 100%;
   height: auto;
 }
@@ -131,13 +136,13 @@ div>a>img{
 
 #standings {
   display: flex;
-  margin-left:-5px;
-  margin-right:-5px;
+  margin-left: -5px;
+  margin-right: -5px;
   /* padding-bottom: 5px; */
   /* border: red 3px solid; */
 }
 
-td >img{
+td>img {
   height: 3rem;
   width: 3rem;
   /* border: red 3px solid; */
@@ -158,7 +163,8 @@ table {
 }
 
 
-th, td {
+th,
+td {
   text-align: center;
   padding: 16px;
 }
@@ -167,24 +173,25 @@ tr:nth-child(even) {
   background-color: #f2f2f2;
 }
 
-table caption{
-  color:white;
+table caption {
+  color: white;
   font-size: 2em;
   font-weight: bold;
   margin-bottom: 0.5em;
 }
 
-#wctb tr:nth-child(4){
+#wctb tr:nth-child(4) {
   border-bottom: black dotted 2px;
 }
 
-#alwtb{
+#alwtb {
   border-bottom: 3px solid transparent;
 }
 
 .jquery-ui {
   display: flex;
   flex-wrap: wrap;
+  /* min-height: 500px; */
 }
 
 .tabJoined {
@@ -197,5 +204,136 @@ table caption{
   }
 }
 
+#fis {
+  display: flex;
+  border: black 2px solid;
+  /* width: 100%; */
+}
+
+#fis img {
+  width: 140px;
+
+}
 
 
+.player {
+  /* border: #C0111F solid 2px; */
+  display: inline-block;
+
+}
+
+.player span {
+  /* border: #C0111F solid 2px; */
+  position: relative;
+  margin: 0 60px 0 24px;
+  padding: 0 8px;
+  color: #003278;
+  font-size: 1.125rem;
+  font-weight: bold;
+  text-wrap: nowrap;
+
+}
+
+/* .p-name{
+  border: #C0111F solid 1px;
+} */
+
+.rank1 {
+  display: flex;
+  height: 100%;
+  width: 24px;
+  background-color: #003278;
+  color: #f2f2f2;
+  /* text-align: center; */
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  font-size: 14px;
+  font-weight: 900;
+  font-style: italic;
+  top: 0;
+  left: 0;
+}
+
+.rank {
+  display: flex;
+  height: 100%;
+  width: 24px;
+  background-color: #eeeeee;
+  color: #666;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  font-size: 14px;
+  font-weight: 900;
+  font-style: italic;
+  top: 0;
+  left: 0;
+
+}
+
+.topERA ul li::before{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  top: 50%;
+  left: 0;
+  position: absolute;
+  border-top: 1px solid #e5e5e5;
+}
+
+.topERA ul li::after{
+  content: "";
+  display: block;
+  clear: both;
+} 
+
+/* .p-name::after{
+  content: "";
+  display: block;
+  width: 50%;
+  height: 1px;
+  top: 50%;
+  left: 100px;
+  position: absolute;
+  border-top: 1px solid #e5e5e5;
+} */
+
+
+.topERA {
+  border: blue solid 2px;
+  width: 100%;
+}
+
+.topERA ul {
+  list-style: none;
+  /* position: relative; */
+  /* border: green solid 2px; */
+  margin-top: 5px;
+  margin-left: 14px;
+  /* overflow: hidden; */
+
+}
+
+.topERA ul li {
+  /* display: block; */
+  margin-bottom: 14px;
+  list-style: none;
+  left: -50px;
+  position: relative;
+  min-width: 100%;
+  /* border: yellow solid 2px; */
+
+}
+
+.num{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  top:0;
+  right: -30px;
+  height: 100%;
+  /* min-width: 100%; */
+}
