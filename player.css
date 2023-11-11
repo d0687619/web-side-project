@@ -149,19 +149,34 @@ body {
     /* display: flex; */
     width: 120px;
  }
+ .grid-item div img:hover{
+    /* display: flex; */
+    opacity: 0.7;
+    width: 123px;
+    
+ }
 
  #tim{
     width: 180px;
  }
-
+ #tim:hover{
+    width: 182px;
+ }
+ 
  #ecker{
-    width: 155px;
- }
-
- #maddux{
+   width: 155px;
+  }
+ #ecker:hover{
+   width: 157px;
+  }
+  
+  #maddux{
     width: 180px;
- }
-
+  }
+  
+  #maddux:hover{
+     width: 182px;
+  }
 .grid-item a{
     display: block;
     /* border: red 2px solid; */
