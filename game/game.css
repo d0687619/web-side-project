@@ -89,6 +89,7 @@ body {
 
   .box-bg{
     background-color: #131a20;
+    /* border: red solid 2px; */
   }
 
 
@@ -106,6 +107,7 @@ body {
     background-color: #131a20;
     border-top: rgba(242, 242, 242, .3) 1px solid;
     border-bottom: rgba(242, 242, 242, .3) 1px solid;
+    line-height: 130%;
   }
   
   
@@ -135,6 +137,7 @@ body {
     font-size: 2em;
     font-weight: bold;
     margin-bottom: 0.5em;
+    margin-top: 0.3em;
     /* border:#003278 2px solid; */
   }
 
@@ -164,7 +167,7 @@ body {
     width: 150px;
     height: 150px;
     align-self: center;
-    border: red solid 3px;
+    /* border: red solid 3px; */
 
   }
 
@@ -206,6 +209,71 @@ body {
     position: absolute;
     left: 60%;
   }
+
+  .vstitle{
+    display: flex;
+    /* text-align: center; */
+    color: white;
+    font-size: 2.3em;
+    font-weight: 700;
+    /* margin-left: 2em; */
+    /* border: red 2px solid; */
+  }
+
+.item { 
+  display: flex;
+  flex: 1;
+  /* border: yellow 2px solid; */
+ }
+
+
+.item1 > span { 
+  margin-right: auto; 
+}
+
+.item2{
+  justify-content: flex-end;
+  padding-right: 10px;
+  align-self: center;
+}
+
+.item1{
+  padding-left: 10px;
+  align-self: center;
+}
+
+.box-container{
+  margin-bottom: 100px;
+}
+
+
+.box-bg a img{
+  width: 560px;
+  height: 315px;
+}
+
+.box-bg a img:hover{
+  opacity: 0.7;
+}
+
+.box-bg a div{
+  /* border: #C0111F 2px solid; */
+  display: none;
+  text-align: center;
+}
+
+.box-bg:hover a div{
+  display: block;
+}
+
+
+
+
+
+
+
+
+
 
 
 
