@@ -77,14 +77,14 @@ body {
 
   .outercontainer {
     /* border: red 3px solid; */
-    max-width: 1200px;
+    max-width: 1300px;
     margin: auto;
     background-color: #003278;
   }
 
   #box{
     display: flex;
-    border: yellow 2px solid;
+    /* border: yellow 2px solid; */
   }
 
   .box-bg{
@@ -98,42 +98,57 @@ body {
     /* border: red 3px solid; */
   }
   
-  .column {
-    flex: 70%;
-    padding: 5px;
-    border: red solid 3px;
-  }
   
   table {
     border-collapse: collapse;
     border-spacing: 0;
     width: 100%;
     background-color: #131a20;
-    /* border: yellow 3px solid; */
+    border-top: rgba(242, 242, 242, .3) 1px solid;
+    border-bottom: rgba(242, 242, 242, .3) 1px solid;
   }
   
   
-  th,
   td {
     text-align: center;
-    padding: 16px;
+    padding: 6px;
     color: white;
+    /* sborder: red solid 2px; */
+    max-width: 22px;
+    font-size: 16px;
   }
-  
-  
+
+  th{
+    text-align: center;
+    padding: 6px;
+    font-weight: 500;
+    color: #b6b7b8;
+    /* sborder: red solid 2px; */
+    max-width: 22px;
+    font-size: 16px;
+  }
+
+
+ 
   table caption {
     color: white;
     font-size: 2em;
     font-weight: bold;
     margin-bottom: 0.5em;
+    /* border:#003278 2px solid; */
+  }
+
+  
+  .column {
+    flex: auto;
+    padding: 5px;
   }
   
-
   #left-team{
     /* flex: 10%; */
     width: 150px;
     height: 150px;
-    border: red solid 3px;
+    /* border-right: lightgray 1px solid; */
     align-self: center;
   }
   
@@ -159,5 +174,38 @@ body {
     /* border: red solid 3px; */
 
   }
+
+  td:first-child{
+    font-weight: 700;
+  }
+
+  .bot-box{
+    position: relative;
+    /* border: red solid 3px; */
+  }
+
+  .bot{
+    display: inline-block;
+    color: white;
+    font-size: 1.1em;
+    padding: 14px;
+  }
+
+  .bot-2{
+    text-align: center;
+    position: absolute;
+    left: 30%;
+  }
+
+  .bot-3{
+    position: absolute;
+    right: 0;
+  }
   
+  .bot-4{
+    position: absolute;
+    left: 60%;
+  }
+
+
 
