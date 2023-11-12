@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: rgb(236,236,236); */
+    background-image: url("../img/background.jpeg");
+    background-repeat: repeat;
+    /* background-size:100%; */
+  }
+  
+  html {
+    height: 100%
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .topnav {
+    background-color: #C0111F;
+    overflow: hidden;
+    /* border: black 2px solid; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+  }
+  
+  .topnav a {
+    float: left;
+    color: gainsboro;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 23px;
+    font-weight: bolder;
+    text-shadow: 1px 1px black;
+    /* border: black 2px solid; */
+    margin-left: 20px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    color: whitesmoke;
+  
+  }
+  
+  
+  div>a>img {
+    min-height: 50px;
+    max-height: 50px;
+    top: auto;
+    /* border: 2px black solid; */
+  }
+  
+  #logocom {
+    margin-left: auto;
+    /* border: 2px solid black; */
+  
+  }
+  
+  #goandtake img {
+    max-height: 56px;
+    /* border: black 2px solid; */
+  }
+  
+  #goandtake {
+    flex: 1 1 auto;
+    align-items: center;
+  }
+  
+  #navabove {
+    display: flex;
+    height: 56px;
+    justify-content: flex-end;
+    flex: 99 1 45%
+  }
+
+  .outercontainer {
+    /* border: red 3px solid; */
+    max-width: 1200px;
+    margin: auto;
+    background-color: #003278;
+  }
+
+  #box{
+    display: flex;
+    border: yellow 2px solid;
+  }
+
+  .box-bg{
+    background-color: #131a20;
+  }
+
+
+  td>img {
+    height: 3rem;
+    width: 3rem;
+    /* border: red 3px solid; */
+  }
+  
+  .column {
+    flex: 70%;
+    padding: 5px;
+    border: red solid 3px;
+  }
+  
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    background-color: #131a20;
+    /* border: yellow 3px solid; */
+  }
+  
+  
+  th,
+  td {
+    text-align: center;
+    padding: 16px;
+    color: white;
+  }
+  
+  
+  table caption {
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+  }
+  
+
+  #left-team{
+    /* flex: 10%; */
+    width: 150px;
+    height: 150px;
+    border: red solid 3px;
+    align-self: center;
+  }
+  
+  #left-team img{
+    width: 100%;
+    height: 100%;
+    /* border: black solid 3px; */
+
+  }
+
+  #right-team{
+    /* flex: 10%; */
+    width: 150px;
+    height: 150px;
+    align-self: center;
+    border: red solid 3px;
+
+  }
+
+  #right-team img{
+    width: 100%;
+    height: 100%;
+    /* border: red solid 3px; */
+
+  }
+  
+

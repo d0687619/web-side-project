@@ -291,3 +291,18 @@ td:not(:first-child){
        left: 0;
        bottom: 0;
     }
+
+    .top-bg{
+      /* border: rebeccapurple 2px solid; */
+      text-align: center;
+    }
+  
+    .top-bg img{
+      width: 100%;
+      /* max-width: 1500px; */
+      height: auto;
+    }
+
+    #box{
+      display: flex;
+    }
