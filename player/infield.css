@@ -240,3 +240,37 @@ td:not(:first-child){
       left: 0;
       bottom: 0;
    }
+   
+   #heim{
+       background-image: url("../img/jonah-heim.jpeg");
+       background-repeat: no-repeat;
+       background-size: cover;
+       /* border: red 3px solid; */
+       min-height: 500px;
+       position: relative;
+    }
+   
+    #heim>div {
+       /* border: yellow 3px solid; */
+       position: absolute;
+       /* padding: 5px; */
+       left: 0;
+       bottom: 0;
+    }
+
+   #hedges{
+       background-image: url("../img/austin-hedges.jpeg");
+       background-repeat: no-repeat;
+       background-size: cover;
+       /* border: red 3px solid; */
+       min-height: 500px;
+       position: relative;
+    }
+   
+    #hedges>div {
+       /* border: yellow 3px solid; */
+       position: absolute;
+       /* padding: 5px; */
+       left: 0;
+       bottom: 0;
+    }
