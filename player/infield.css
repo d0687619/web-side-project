@@ -274,3 +274,20 @@ td:not(:first-child){
        left: 0;
        bottom: 0;
     }
+
+   #graver{
+       background-image: url("../img/mitch-graver.jpeg");
+       background-repeat: no-repeat;
+       background-size: cover;
+       /* border: red 3px solid; */
+       min-height: 500px;
+       position: relative;
+    }
+   
+    #graver>div {
+       /* border: yellow 3px solid; */
+       position: absolute;
+       /* padding: 5px; */
+       left: 0;
+       bottom: 0;
+    }
