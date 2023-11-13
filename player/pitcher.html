@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <link rel="stylesheet" href="pitcher.css">
+</head>
+
+<body>
+  <div id="navabove" style="background-color: #003278;">
+    <div id="goandtake">
+      <img src="../img/GATI_OnDark.svg">
+    </div>
+  </div>
+
+  <div>
+    <div class="topnav" id="myTopnav">
+      <a id="texlogo" href="../main.html"><img src="../img/tlogo.svg" alt=""></a>
+      <a href="../main.html">首頁</a>
+      <a href="../player.html">球員</a>
+      <a href="../game/game.html">比賽結果</a>
+      <a href="../post-season/post-season.html">季後賽</a>
+      <!-- <a href="#keyMen">關鍵角色</a> -->
+      <a href="#rangers">關於Rangers</a>
+      <a id="logocom" href="main.html"><img src="../img/Rangers_dot_com.svg" alt=""></a>
+    </div>
+  </div>
+  <!-- <br> -->
+  <div class="outercontainer">
+    <div class="infield">
+      <div id="scherzer">
+        <div>
+          <div class="p-name">
+            <p>Max Scherzer #31</p>
+          </div>
+          <div class="p-data">
+            <p> 投手 | 右投右打 | 208公分 | 39歲</p>
+          </div>
+        </div>
+      </div>
+      <div id="corey-b">
+        <div id="corey-bio">
+          <ul>
+            <li><span class="liTitle">個人資料</span></li>
+            <li><span class="liTitle">綽號: </span><span class="liContent">Brown Eye</span></li>
+            <li><span class="liTitle">出生於: </span> <span class="liContent">1984.7.27, St. Louis, MO</span></li>
+            <li><span class="liTitle">選秀: </span><span class="liContent">2006年第一輪11順位, Arizona Diamondbacks</span></li>
+            <li><span class="liTitle">大學: </span><span class="liContent">University of Missouri</span></li>
+            <li><span class="liTitle">初次登場: </span><span class="liContent">2008.4.29</span></li>
+          </ul>
+        </div>
+
+        <div class="column">
+          <table>
+            <tr>
+              <th>年</th>
+              <th>勝</th>
+              <th>敗</th>
+              <th>防禦率</th>
+              <th>出賽</th>
+              <th>先發</th>
+              <th>救援</th>
+              <th>局數</th>
+              <th>三振</th>
+              <th>每局被上壘率</th>
+            </tr>
+            <tr>
+              <td>2023季後賽</td>
+              <td>0</td>
+              <td>1</td>
+              <td>6.52</td>
+              <td>3</td>
+              <td>3</td>
+              <td>0</td>
+              <td>9.2</td>
+              <td>7</td>
+              <td>1.66</td>
+            </tr>
+            <tr>
+              <td>生涯季後賽</td>
+              <td>7</td>
+              <td>8</td>
+              <td>3.78</td>
+              <td>30</td>
+              <td>25</td>
+              <td>1</td>
+              <td>143.0</td>
+              <td>171</td>
+              <td>1.15</td>
+            </tr>
+            <tr>
+              <td>2023例行賽</td>
+              <td>13</td>
+              <td>6</td>
+              <td>3.77</td>
+              <td>27</td>
+              <td>27</td>
+              <td>0</td>
+              <td>152.2</td>
+              <td>174</td>
+              <td>1.12</td>
+            </tr>
+            <tr>
+              <td>生涯例行賽</td>
+              <td>214</td>
+              <td>108</td>
+              <td>3.15</td>
+              <td>457</td>
+              <td>448</td>
+              <td>0</td>
+              <td>2834.2</td>
+              <td>3367</td>
+              <td>1.08</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="infield">
+      <div id="eovaldi">
+        <div>
+          <div class="p-name">
+            <p>Nathan Eovaldi #17</p>
+          </div>
+          <div class="p-data">
+            <p> 投手 | 右投右打 | 217公分 | 33歲</p>
+          </div>
+        </div>
+      </div>
+      <div id="corey-b">
+        <div id="corey-bio">
+          <ul>
+            <li><span class="liTitle">個人資料</span></li>
+            <li><span class="liTitle">綽號: </span><span class="liContent">Nitro</span></li>
+            <li><span class="liTitle">出生於: </span> <span class="liContent">1990.2.13, Houston, TX</span></li>
+            <li><span class="liTitle">選秀: </span><span class="liContent">2008年第11輪337順位, Los Angeles Dodgers</span></li>
+            <li><span class="liTitle">高中: </span><span class="liContent">Alvin, Alvin, TX</span></li>
+            <li><span class="liTitle">初次登場: </span><span class="liContent">2011.8.06</span></li>
+          </ul>
+        </div>
+
+        <div class="column">
+          <table>
+            <tr>
+              <th>年</th>
+              <th>勝</th>
+              <th>敗</th>
+              <th>防禦率</th>
+              <th>出賽</th>
+              <th>先發</th>
+              <th>救援</th>
+              <th>局數</th>
+              <th>三振</th>
+              <th>每局被上壘率</th>
+            </tr>
+            <tr>
+              <td>2023季後賽</td>
+              <td>5</td>
+              <td>0</td>
+              <td>2.95</td>
+              <td>6</td>
+              <td>6</td>
+              <td>0</td>
+              <td>36.2</td>
+              <td>41</td>
+              <td>1.12</td>
+            </tr>
+            <tr>
+              <td>生涯季後賽</td>
+              <td>9</td>
+              <td>3</td>
+              <td>3.05</td>
+              <td>17</td>
+              <td>12</td>
+              <td>0</td>
+              <td>79.2</td>
+              <td>82</td>
+              <td>1.04</td>
+            </tr>
+            <tr>
+              <td>2023例行賽</td>
+              <td>12</td>
+              <td>5</td>
+              <td>3.63</td>
+              <td>25</td>
+              <td>25</td>
+              <td>0</td>
+              <td>144.0</td>
+              <td>132</td>
+              <td>1.14</td>
+            </tr>
+            <tr>
+              <td>生涯例行賽</td>
+              <td>79</td>
+              <td>73</td>
+              <td>4.10</td>
+              <td>265</td>
+              <td>246</td>
+              <td>0</td>
+              <td>1401.2</td>
+              <td>1192</td>
+              <td>1.30</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="infield">
+      <div id="monty">
+        <div>
+          <div class="p-name">
+            <p>Jordan Montgomery #52</p>
+          </div>
+          <div class="p-data">
+            <p> 投手 | 左投左打 | 228公分 | 30歲</p>
+          </div>
+        </div>
+      </div>
+      <div id="corey-b">
+        <div id="corey-bio">
+          <ul>
+            <li><span class="liTitle">個人資料</span></li>
+            <li><span class="liTitle">綽號: </span><span class="liContent">Monty</span></li>
+            <li><span class="liTitle">出生於: </span> <span class="liContent">1992.12.27, Sumter, SC</span></li>
+            <li><span class="liTitle">選秀: </span><span class="liContent">2014年第4輪122順位, New York Yankees</span></li>
+            <li><span class="liTitle">大學: </span><span class="liContent">South Carolina</span></li>
+            <li><span class="liTitle">初次登場: </span><span class="liContent">2017.4.12</span></li>
+          </ul>
+        </div>
+
+        <div class="column">
+          <table>
+            <tr>
+              <th>年</th>
+              <th>勝</th>
+              <th>敗</th>
+              <th>防禦率</th>
+              <th>出賽</th>
+              <th>先發</th>
+              <th>救援</th>
+              <th>局數</th>
+              <th>三振</th>
+              <th>每局被上壘率</th>
+            </tr>
+            <tr>
+              <td>2023季後賽</td>
+              <td>3</td>
+              <td>1</td>
+              <td>2.90</td>
+              <td>6</td>
+              <td>5</td>
+              <td>0</td>
+              <td>31.0</td>
+              <td>17</td>
+              <td>1.35</td>
+            </tr>
+            <tr>
+              <td>生涯季後賽</td>
+              <td>3</td>
+              <td>1</td>
+              <td>2.63</td>
+              <td>8</td>
+              <td>6</td>
+              <td>0</td>
+              <td>37.2</td>
+              <td>24</td>
+              <td>1.41</td>
+            </tr>
+            <tr>
+              <td>2023例行賽</td>
+              <td>10</td>
+              <td>11</td>
+              <td>3.20</td>
+              <td>32</td>
+              <td>32</td>
+              <td>0</td>
+              <td>188.0</td>
+              <td>166</td>
+              <td>1.19</td>
+            </tr>
+            <tr>
+              <td>生涯例行賽</td>
+              <td>38</td>
+              <td>34</td>
+              <td>3.68</td>
+              <td>141</td>
+              <td>140</td>
+              <td>0</td>
+              <td>755.0</td>
+              <td>705</td>
+              <td>1.21</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="infield">
+      <div id="heaney">
+        <div>
+          <div class="p-name">
+            <p>Andrew Heaney #44</p>
+          </div>
+          <div class="p-data">
+            <p> 投手 | 左投左打 | 200公分 | 32歲</p>
+          </div>
+        </div>
+      </div>
+      <div id="corey-b">
+        <div id="corey-bio">
+          <ul>
+            <li><span class="liTitle">個人資料</span></li>
+            <li><span class="liTitle">綽號: </span><span class="liContent">Heandog</span></li>
+            <li><span class="liTitle">出生於: </span> <span class="liContent">1991.6.05, Oklahoma City, OK</span></li>
+            <li><span class="liTitle">選秀: </span><span class="liContent">2012年第1輪9順位, Miami Marlins</span></li>
+            <li><span class="liTitle">大學: </span><span class="liContent">Oklahoma State</span></li>
+            <li><span class="liTitle">初次登場: </span><span class="liContent">2014.6.19</span></li>
+          </ul>
+        </div>
+
+        <div class="column">
+          <table>
+            <tr>
+              <th>年</th>
+              <th>勝</th>
+              <th>敗</th>
+              <th>防禦率</th>
+              <th>出賽</th>
+              <th>先發</th>
+              <th>救援</th>
+              <th>局數</th>
+              <th>三振</th>
+              <th>每局被上壘率</th>
+            </tr>
+            <tr>
+              <td>2023季後賽</td>
+              <td>1</td>
+              <td>0</td>
+              <td>4.09</td>
+              <td>5</td>
+              <td>3</td>
+              <td>0</td>
+              <td>11.0</td>
+              <td>4</td>
+              <td>1.36</td>
+            </tr>
+            <tr>
+              <td>生涯季後賽</td>
+              <td>1</td>
+              <td>0</td>
+              <td>3.86</td>
+              <td>6</td>
+              <td>3</td>
+              <td>0</td>
+              <td>14</td>
+              <td>8</td>
+              <td>1.43</td>
+            </tr>
+            <tr>
+              <td>2023例行賽</td>
+              <td>10</td>
+              <td>6</td>
+              <td>4.15</td>
+              <td>34</td>
+              <td>28</td>
+              <td>0</td>
+              <td>147.1</td>
+              <td>151</td>
+              <td>1.38</td>
+            </tr>
+            <tr>
+              <td>生涯例行賽</td>
+              <td>46</td>
+              <td>48</td>
+              <td>4.49</td>
+              <td>171</td>
+              <td>154</td>
+              <td>0</td>
+              <td>854.1</td>
+              <td>911</td>
+              <td>1.27</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="infield">
+      <div id="bradford">
+        <div>
+          <div class="p-name">
+            <p>Cody Bradford #61</p>
+          </div>
+          <div class="p-data">
+            <p> 投手 | 左投左打 | 197公分 | 25歲</p>
+          </div>
+        </div>
+      </div>
+      <div id="corey-b">
+        <div id="corey-bio">
+          <ul>
+            <li><span class="liTitle">個人資料</span></li>
+            <!-- <li><span class="liTitle">綽號: </span><span class="liContent">Heandog</span></li> -->
+            <li><span class="liTitle">出生於: </span> <span class="liContent">1998.2.22, Aledo, TX</span></li>
+            <li><span class="liTitle">選秀: </span><span class="liContent">2019年第6輪175順位, Texas Rangers</span></li>
+            <li><span class="liTitle">大學: </span><span class="liContent">Baylor University</span></li>
+            <li><span class="liTitle">初次登場: </span><span class="liContent">2023.5.15</span></li>
+          </ul>
+        </div>
+
+        <div class="column">
+          <table>
+            <tr>
+              <th>年</th>
+              <th>勝</th>
+              <th>敗</th>
+              <th>防禦率</th>
+              <th>出賽</th>
+              <th>先發</th>
+              <th>救援</th>
+              <th>局數</th>
+              <th>三振</th>
+              <th>每局被上壘率</th>
+            </tr>
+            <tr>
+              <td>2023季後賽</td>
+              <td>1</td>
+              <td>0</td>
+              <td>1.17</td>
+              <td>5</td>
+              <td>0</td>
+              <td>0</td>
+              <td>7.2</td>
+              <td>5</td>
+              <td>0.52</td>
+            </tr>
+            <tr>
+              <td>生涯季後賽</td>
+              <td>1</td>
+              <td>0</td>
+              <td>1.17</td>
+              <td>5</td>
+              <td>0</td>
+              <td>0</td>
+              <td>7.2</td>
+              <td>5</td>
+              <td>0.52</td>
+            </tr>
+            <tr>
+              <td>2023例行賽</td>
+              <td>4</td>
+              <td>3</td>
+              <td>5.30</td>
+              <td>20</td>
+              <td>8</td>
+              <td>0</td>
+              <td>56.0</td>
+              <td>51</td>
+              <td>1.21</td>
+            </tr>
+            <tr>
+              <td>生涯例行賽</td>
+              <td>4</td>
+              <td>3</td>
+              <td>5.30</td>
+              <td>20</td>
+              <td>8</td>
+              <td>0</td>
+              <td>56.0</td>
+              <td>51</td>
+              <td>1.21</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="infield">
+      <div id="dunning">
+        <div>
+          <div class="p-name">
+            <p>Dane Dunning #33</p>
+          </div>
+          <div class="p-data">
+            <p> 投手 | 右投右打 | 225公分 | 28歲</p>
+          </div>
+        </div>
+      </div>
+      <div id="corey-b">
+        <div id="corey-bio">
+          <ul>
+            <li><span class="liTitle">個人資料</span></li>
+            <!-- <li><span class="liTitle">綽號: </span><span class="liContent">Heandog</span></li> -->
+            <li><span class="liTitle">出生於: </span> <span class="liContent">1994.12.20, Orange Park, FL</span></li>
+            <li><span class="liTitle">選秀: </span><span class="liContent">2016年第1輪29順位, Washington Nationals</span></li>
+            <li><span class="liTitle">大學: </span><span class="liContent">Florida</span></li>
+            <li><span class="liTitle">初次登場: </span><span class="liContent">2020.8.19</span></li>
+          </ul>
+        </div>
+
+        <div class="column">
+          <table>
+            <tr>
+              <th>年</th>
+              <th>勝</th>
+              <th>敗</th>
+              <th>防禦率</th>
+              <th>出賽</th>
+              <th>先發</th>
+              <th>救援</th>
+              <th>局數</th>
+              <th>三振</th>
+              <th>每局被上壘率</th>
+            </tr>
+            <tr>
+              <td>2023季後賽</td>
+              <td>1</td>
+              <td>1</td>
+              <td>5.12</td>
+              <td>5</td>
+              <td>0</td>
+              <td>0</td>
+              <td>7.0</td>
+              <td>5</td>
+              <td>1.86</td>
+            </tr>
+            <tr>
+              <td>生涯季後賽</td>
+              <td>1</td>
+              <td>1</td>
+              <td>5.12</td>
+              <td>5</td>
+              <td>0</td>
+              <td>0</td>
+              <td>7.0</td>
+              <td>5</td>
+              <td>1.86</td>
+            </tr>
+            <tr>
+              <td>2023例行賽</td>
+              <td>12</td>
+              <td>7</td>
+              <td>3.70</td>
+              <td>35</td>
+              <td>26</td>
+              <td>0</td>
+              <td>172.2</td>
+              <td>140</td>
+              <td>1.26</td>
+            </tr>
+            <tr>
+              <td>生涯例行賽</td>
+              <td>23</td>
+              <td>25</td>
+              <td>4.16</td>
+              <td>98</td>
+              <td>87</td>
+              <td>0</td>
+              <td>477.2</td>
+              <td>426</td>
+              <td>1.35</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="top-bg"><img src="../img/mlbad.png"></div>
+
+  </div>
+
+  <br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+  <!-- <script src="player.js"></script> -->
+</body>
