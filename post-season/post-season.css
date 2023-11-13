@@ -124,7 +124,7 @@ body {
 }
 
 .t1{
-    border: red solid 2px;
+    /* border: red solid 2px; */
     flex: 4;
 }
 
@@ -160,13 +160,21 @@ body {
     margin-left: 20px;
 }
 
-#bracket{
+/* #bracket{
     border: red solid 2px;
-}
+} */
 
 #bracket-tb{
-    border: yellow 2px solid;
+    /* border: yellow 2px solid; */
     margin-left: auto;
     margin-right: auto;
+}
+
+#bracket-img img{
+  max-width: 1000px;
+}
+
+#bracket-img{
+  text-align: center;
 }
 
