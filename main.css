@@ -98,6 +98,7 @@ div>a>img {
   /* min-height: 540px; */
   object-fit: contain;
   /* border: red 3px solid; */
+  border-radius: 8px;
 }
 
 #bracket {
