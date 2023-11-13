@@ -118,11 +118,12 @@ body {
     flex: 8;
   }
   
-  #content-1{
+  #content-1,#content-2,#content-3,#content-4,#content-5{
     line-height: 180%;
     font-size: 24px;
     flex: 8;
   }
+
 
 .team{
     justify-content: center;
@@ -134,15 +135,23 @@ body {
     /* border-radius: 8px; */
     flex: 4;
     background-color: white;
+    /* background-color: #C0111F; */
 }
 
 #al{
   border-radius: 8px 0 0 8px;
+  /* background-image: url("../img/al-league.png"); */
+  background-repeat: no-repeat;
+  background-size: contain;
+  
 }
 
 #nl{
   margin-left: auto;
   border-radius: 0 8px 8px 0;
+  /* background-image: url("../img/nl-league.png"); */
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .empty{
@@ -186,19 +195,41 @@ body {
 
 #bracket-img img{
   border-radius: 8px;
-  max-width: 1000px;
+  max-width: 980px;
 }
 
 #bracket-img{
   text-align: center;
 }
 
-#texvsdbacks img{
+#texvsdbacks img,#alnlcs img{
   border-radius: 8px;
-  max-width: 1000px;
+  max-width: 980px;
 }
 
-#texvsdbacks{
+#texvsdbacks,#alnlcs,#adog7,#nlcsg7,#champion{
   text-align: center;
+}
+
+.top-bg{
+  /* border: rebeccapurple 2px solid; */
+  text-align: center;
+}
+
+.top-bg img{
+  max-width: 1100px;
+  /* max-width: 1500px; */
+  height: auto;
+}
+
+.bot-bg{
+  /* border: rebeccapurple 2px solid; */
+  text-align: center;
+}
+
+.bot-bg img{
+  max-width: 100%;
+  /* max-width: 1500px; */
+  height: auto;
 }
 
