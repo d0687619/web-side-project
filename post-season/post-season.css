@@ -117,6 +117,12 @@ body {
     font-size: 24px;
     flex: 8;
   }
+  
+  #content-1{
+    line-height: 180%;
+    font-size: 24px;
+    flex: 8;
+  }
 
 .team{
     justify-content: center;
@@ -125,11 +131,18 @@ body {
 
 .t1{
     /* border: red solid 2px; */
+    /* border-radius: 8px; */
     flex: 4;
+    background-color: white;
+}
+
+#al{
+  border-radius: 8px 0 0 8px;
 }
 
 #nl{
-    margin-left: auto;
+  margin-left: auto;
+  border-radius: 0 8px 8px 0;
 }
 
 .empty{
@@ -141,7 +154,7 @@ body {
 }
 
 .t1 ol{
-    line-height: 190%;
+    line-height: 200%;
 }
 
 .t1 h3{
@@ -155,9 +168,10 @@ body {
 }
 
 .team-img{
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
     margin-left: 20px;
+    margin-bottom: 20px;
 }
 
 /* #bracket{
@@ -171,10 +185,20 @@ body {
 }
 
 #bracket-img img{
+  border-radius: 8px;
   max-width: 1000px;
 }
 
 #bracket-img{
+  text-align: center;
+}
+
+#texvsdbacks img{
+  border-radius: 8px;
+  max-width: 1000px;
+}
+
+#texvsdbacks{
   text-align: center;
 }
 
