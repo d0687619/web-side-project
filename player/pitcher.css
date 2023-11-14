@@ -294,5 +294,57 @@ td:not(:first-child) {
 }
 
 
+#jon {
+  background-image: url("../img/jon-bg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* border: red 3px solid; */
+  min-height: 500px;
+  position: relative;
+}
+
+#jon>div {
+  /* border: yellow 3px solid; */
+  position: absolute;
+  /* padding: 5px; */
+  left: 0;
+  bottom: 0;
+}
+
+#martin {
+  background-image: url("../img/martin-bg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* border: red 3px solid; */
+  min-height: 500px;
+  position: relative;
+}
+
+#martin>div {
+  /* border: yellow 3px solid; */
+  position: absolute;
+  /* padding: 5px; */
+  left: 0;
+  bottom: 0;
+}
+
+#sborz {
+  background-image: url("../img/sborz-bg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* border: red 3px solid; */
+  min-height: 500px;
+  position: relative;
+}
+
+#sborz>div {
+  /* border: yellow 3px solid; */
+  position: absolute;
+  /* padding: 5px; */
+  left: 0;
+  bottom: 0;
+}
+
+
 
 
