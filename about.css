@@ -158,6 +158,65 @@ body {
     /* max-width: 1500px; */
     height: auto;
   }
+
+  .logo{
+    display: flex;
+    /* border: yellow solid 2px; */
+  }
+
+  .logo-uni{
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    /* border: red solid 2px; */
+    justify-content: center;
+    background-color: #003278;
+    border-radius: 8px;
+    margin-bottom: 50px;
+  }
+
+  .logo-uni div h2{
+    text-align: center;
+    color: white;
+  }
+
+  .margin-logo-uni{
+    margin-right: 20px;
+    /* background-color: #003278; */
+  }
+
+  .champ-name{
+    border-radius: 8px;
+    display: flex;
+    color: white;
+    background-color: #003278;
+    width: 80%;
+    margin: 0 auto;
+    /* border:  red solid 2px; */
+    justify-content: center;
+    
+  }
+
+
+  .field-img img{
+    width: 450px;
+    border-radius: 5px;
+  }
+
+  .field-img{
+    margin-top: 15px;
+    margin-right: 5px;
+    /* border: red solid 2px; */
+  }
+
+  .name-field{
+    padding-left: 10px;
+    margin: 0 auto;
+    font-size: 1.1em;
+    line-height: 180%;
+    /* align-self: center; */
+  }
+
   
 
 
