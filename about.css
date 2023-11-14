@@ -115,7 +115,7 @@ body {
     width: 950px;
     border-radius: 8px;
     margin: 0 auto;
-    /* background-color: #131a20; */
+    /* background-color: #003278; */
     /* position: absolute; */
   }
 
@@ -216,6 +216,11 @@ body {
     font-size: 1.1em;
     line-height: 180%;
     /* align-self: center; */
+  }
+
+  .blue-bg{
+    background-color: #003278;
+    border-radius: 8px;
   }
 
   
