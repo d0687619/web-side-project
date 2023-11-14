@@ -345,6 +345,58 @@ td:not(:first-child) {
   bottom: 0;
 }
 
+#chapman {
+  background-image: url("../img/chapaman-bg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* border: red 3px solid; */
+  min-height: 500px;
+  position: relative;
+}
+
+#chapman>div {
+  /* border: yellow 3px solid; */
+  position: absolute;
+  /* padding: 5px; */
+  left: 0;
+  bottom: 0;
+}
+
+#leclerc {
+  background-image: url("../img/leclerc-bg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* border: red 3px solid; */
+  min-height: 500px;
+  position: relative;
+}
+
+#leclerc>div {
+  /* border: yellow 3px solid; */
+  position: absolute;
+  /* padding: 5px; */
+  left: 0;
+  bottom: 0;
+}
+
+#brock {
+  background-image: url("../img/brock-bg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* border: red 3px solid; */
+  min-height: 500px;
+  position: relative;
+}
+
+#brock>div {
+  /* border: yellow 3px solid; */
+  position: absolute;
+  /* padding: 5px; */
+  left: 0;
+  bottom: 0;
+}
+
+
 
 
 
