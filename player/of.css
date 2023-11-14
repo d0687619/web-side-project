@@ -190,107 +190,7 @@ td:not(:first-child){
 }
 
 
-#jung{
-    background-image: url("../img/josh-jung.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* border: red 3px solid; */
-    min-height: 500px;
-    position: relative;
- }
 
- #jung>div {
-    /* border: yellow 3px solid; */
-    position: absolute;
-    /* padding: 5px; */
-    left: 0;
-    bottom: 0;
- }
- 
- #lowe{
-     background-image: url("../img/nathaniel-lowe.jpeg");
-     background-repeat: no-repeat;
-     background-size: cover;
-     /* border: red 3px solid; */
-     min-height: 500px;
-     position: relative;
-  }
- 
-  #lowe>div {
-     /* border: yellow 3px solid; */
-     position: absolute;
-     /* padding: 5px; */
-     left: 0;
-     bottom: 0;
-  }
-  
-  #marcus{
-      background-image: url("../img/marcus-semin.jpeg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      /* border: red 3px solid; */
-      min-height: 500px;
-      position: relative;
-   }
-  
-   #marcus>div {
-      /* border: yellow 3px solid; */
-      position: absolute;
-      /* padding: 5px; */
-      left: 0;
-      bottom: 0;
-   }
-   
-   #heim{
-       background-image: url("../img/jonah-heim.jpeg");
-       background-repeat: no-repeat;
-       background-size: cover;
-       /* border: red 3px solid; */
-       min-height: 500px;
-       position: relative;
-    }
-   
-    #heim>div {
-       /* border: yellow 3px solid; */
-       position: absolute;
-       /* padding: 5px; */
-       left: 0;
-       bottom: 0;
-    }
-
-   #hedges{
-       background-image: url("../img/austin-hedges.jpeg");
-       background-repeat: no-repeat;
-       background-size: cover;
-       /* border: red 3px solid; */
-       min-height: 500px;
-       position: relative;
-    }
-   
-    #hedges>div {
-       /* border: yellow 3px solid; */
-       position: absolute;
-       /* padding: 5px; */
-       left: 0;
-       bottom: 0;
-    }
-
-   #graver{
-       background-image: url("../img/mitch-graver.jpeg");
-       background-repeat: no-repeat;
-       background-size: cover;
-       /* border: red 3px solid; */
-       min-height: 500px;
-       position: relative;
-    }
-   
-    #graver>div {
-       /* border: yellow 3px solid; */
-       position: absolute;
-       /* padding: 5px; */
-       left: 0;
-       bottom: 0;
-    }
 
     .top-bg{
       /* border: rebeccapurple 2px solid; */
@@ -306,3 +206,92 @@ td:not(:first-child){
     #box{
       display: flex;
     }
+
+
+    #adolis{
+        background-image: url("../img/adolis-bg.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* border: red 3px solid; */
+        min-height: 500px;
+        position: relative;
+     }
+    
+     #adolis>div {
+        /* border: yellow 3px solid; */
+        position: absolute;
+        /* padding: 5px; */
+        left: 0;
+        bottom: 0;
+     }
+
+     #carter{
+        background-image: url("../img/carter-bg.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* border: red 3px solid; */
+        min-height: 500px;
+        position: relative;
+     }
+    
+     #carter>div {
+        /* border: yellow 3px solid; */
+        position: absolute;
+        /* padding: 5px; */
+        left: 0;
+        bottom: 0;
+     }
+
+
+     #leody{
+        background-image: url("../img/leody-bg.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* border: red 3px solid; */
+        min-height: 500px;
+        position: relative;
+     }
+    
+     #leody>div {
+        /* border: yellow 3px solid; */
+        position: absolute;
+        /* padding: 5px; */
+        left: 0;
+        bottom: 0;
+     }
+
+
+     #robbie{
+        background-image: url("../img/robbie-bg.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* border: red 3px solid; */
+        min-height: 500px;
+        position: relative;
+     }
+    
+     #robbie>div {
+        /* border: yellow 3px solid; */
+        position: absolute;
+        /* padding: 5px; */
+        left: 0;
+        bottom: 0;
+     }
+
+
+     #janko{
+        background-image: url("../img/janko-bg.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* border: red 3px solid; */
+        min-height: 500px;
+        position: relative;
+     }
+    
+     #janko>div {
+        /* border: yellow 3px solid; */
+        position: absolute;
+        /* padding: 5px; */
+        left: 0;
+        bottom: 0;
+     }
