@@ -127,8 +127,9 @@ body {
   .space{
     flex: 1;
   }
-  #content{
-    line-height: 180%;
+  #content,#content-1,#content-2,#content-3{
+    line-height: 200%;
+    font-weight: 500;
     font-size: 20px;
     flex: 8;
   }
