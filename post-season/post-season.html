@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <link rel="stylesheet" href="post-season.css">
+</head>
+
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="#intro" id="about">賽制</a>
+        <a href="#part-team" id="blog">球隊</a>
+        <a href="#up" id="projects">晉級表</a>
+        <a href="#fight" id="contact">戰況</a>
+    </div>
+
+    <div id="navabove" style="background-color: #003278;">
+        <div id="goandtake">
+            <img src="../img/GATI_OnDark.svg">
+        </div>
+    </div>
+
+    <div>
+        <div class="topnav" id="myTopnav">
+            <a id="texlogo" href="../main.html"><img src="../img/tlogo.svg" alt=""></a>
+            <a href="../main.html">首頁</a>
+            <a href="../player.html">球員</a>
+            <a href="../game/game.html">比賽結果</a>
+            <a href="../post-season/post-season.html">季後賽</a>
+            <!-- <a href="#keyMen">關鍵角色</a> -->
+            <a href="../about.html">關於Rangers</a>
+            <a id="logocom" href="../main.html"><img src="../img/Rangers_dot_com.svg" alt=""></a>
+        </div>
+    </div>
+    <!-- <br> -->
+    <div class="outercontainer">
+        <!-- <br><br><br><br> -->
+        <article>
+            <div class="top-bg"><img src="../img/2023pos.png"></div>
+            <br><br>
+            <h1 class="inarticle" style="font-size: 2.5em;">2023年美國職棒大聯盟季後賽</h1>
+            <br><br>
+            <h2 class="inarticle" id="intro">賽制與簡介</h2>
+            <div class="content inarticle">
+                <p class="space">&nbsp;</p>
+                <p id="content">
+                    大聯盟今年沿用去年球季設立的新制度，每個聯盟取三支外卡球隊，兩個聯盟戰績最佳的兩支分區冠軍直接保送到聯盟分區賽，戰績最差的分區冠軍與三支外卡球隊進行三戰兩勝的外卡系列賽，勝隊和前二種子進行分區賽，接著進行聯盟冠軍賽，勝者再於世界大賽上對決。
+                    <br>金鶯隊與遊騎兵隊睽違7年再次晉級季後賽。勇士隊連續6年晉級季後賽，道奇隊連續11年晉級季後賽，釀酒人和響尾蛇隊睽違5年再次晉級季後賽。
+                    季後賽於10月3日開始，11月1日結束。遊騎兵隊最終在世界大賽以4勝1敗打敗響尾蛇隊，拿下隊史第1冠。
+                </p>
+                <p class="space">&nbsp;</p>
+            </div>
+            <h2 class="inarticle" id="part-team">參與球隊</h2>
+            <br>
+            <div class="team">
+                <div class="empty">&nbsp;</div>
+                <div class="t1" id="al">
+                    <h3>&nbsp;&nbsp;美國聯盟</h3>
+                    <ol>
+                        <li>巴爾的摩金鶯 - 101勝61敗, 美聯東區冠軍</li>
+                        <li>休士頓太空人 - 90勝72敗, 美聯西區冠軍</li>
+                        <li>明尼蘇達雙城 - 87勝75敗, 美聯中區冠軍</li>
+                        <li>坦帕灣光芒 - 99勝63敗, 美聯外卡一</li>
+                        <li>德州遊騎兵 - 90勝72敗, 美聯外卡二</li>
+                        <li>多倫多藍鳥 - 89勝73敗, 美聯外卡三</li>
+                    </ol>
+                    <div class="al-team">
+                        <div class="team-img"><img src="../img/baltimore-log.svg"></div>
+                        <div class="team-img"><img src="../img/astro.svg"></div>
+                        <div class="team-img"><img src="../img/twins-logo.svg"></div>
+                        <div class="team-img"><img src="../img/tampa-logo.svg"></div>
+                        <div class="team-img"><img src="../img/rangers.svg"></div>
+                        <div class="team-img"><img src="../img/jays.svg"></div>
+                    </div>
+                </div>
+                <div class="t1" id="nl">
+                    <h3>&nbsp;&nbsp;國家聯盟</h3>
+                    <ol>
+                        <li>亞特蘭大勇士 - 104勝58敗, 國聯東區冠軍</li>
+                        <li>洛杉磯道奇 - 100勝62敗, 國聯西區冠軍</li>
+                        <li>密爾瓦基釀酒人 - 92勝70敗, 國聯中區冠軍</li>
+                        <li>費城費城人 - 90勝72敗, 國聯外卡一</li>
+                        <li>邁阿密馬林魚 - 84勝78敗, 國聯外卡二</li>
+                        <li>亞利桑那響尾蛇 - 84勝78敗, 國聯外卡三</li>
+                    </ol>
+                    <div class="al-team">
+                        <div class="team-img"><img src="../img/braves-logo.svg"></div>
+                        <div class="team-img"><img src="../img/dodges-log.svg"></div>
+                        <div class="team-img"><img src="../img/brewer-logo.svg"></div>
+                        <div class="team-img"><img src="../img/phily-logo.svg"></div>
+                        <div class="team-img"><img src="../img/miami-logo.svg"></div>
+                        <div class="team-img"><img src="../img/d-backs-logo.svg"></div>
+                    </div>
+                </div>
+                <div class="empty">&nbsp;</div>
+
+            </div>
+            <br>
+            <h2 class="inarticle" id="up">晉級表</h2>
+            <br>
+            <div id="bracket-img"><img src="../img/bracket.jpeg"></div>
+            <br>
+            <div id="bracket">
+                <table border="0" cellpadding="0" cellspacing="0" style="font-size:90%; margin:1em auto 1em auto;">
+                    <tbody><tr>
+                    <td>&nbsp;
+                    </td>
+                    <td colspan="3" style="text-align:center; border:1px solid #aaa; background-color:#f2f2f2;">外卡賽<br>
+                    </td>
+                    <td colspan="2">
+                    </td>
+                    <td colspan="3" style="text-align:center; border:1px solid #aaa; background-color:#f2f2f2;">分區賽<br>
+                    </td>
+                    <td colspan="2">
+                    </td>
+                    <td colspan="3" style="text-align:center; border:1px solid #aaa; background-color:#f2f2f2;">聯盟冠軍賽<br>
+                    </td>
+                    <td colspan="2">
+                    </td>
+                    <td colspan="3" style="text-align:center; border:1px solid #aaa; background-color:#f2f2f2;"><span>世界大賽</span>
+                    </td></tr>
+                    <tr>
+                    <td width="1">&nbsp;
+                    </td>
+                    <td width="30">&nbsp;
+                    </td>
+                    <td width="160">&nbsp;
+                    </td>
+                    <td width="30">&nbsp;
+                    </td>
+                    <td width="10">&nbsp;
+                    </td>
+                    <td width="10">&nbsp;
+                    </td>
+                    <td width="30">&nbsp;
+                    </td>
+                    <td width="160">&nbsp;
+                    </td>
+                    <td width="30">&nbsp;
+                    </td>
+                    <td width="10">&nbsp;
+                    </td>
+                    <td width="10">&nbsp;
+                    </td>
+                    <td width="30">&nbsp;
+                    </td>
+                    <td width="160">&nbsp;
+                    </td>
+                    <td width="30">&nbsp;
+                    </td>
+                    <td width="10">&nbsp;
+                    </td>
+                    <td width="10">&nbsp;
+                    </td>
+                    <td width="30">&nbsp;
+                    </td>
+                    <td width="160">&nbsp;
+                    </td>
+                    <td width="30">&nbsp;
+                    </td></tr>
+                    <tr>
+                    <td>&nbsp;
+                    </td>
+                    <td colspan="3" align="center">&nbsp;
+                    </td>
+                    <td>&nbsp;
+                    </td>
+                    <td style="border-width:0 0 1px 0; border-style:solid;border-color:black;">&nbsp;
+                    </td>
+                    <td style="text-align:center; background-color:#8b0000; border:1px solid #600;"><span style="color:#ffffff;"> 1</span>
+                    </td>
+                    <td style="background-color:#ffaeb9; border:1px solid #600; padding-left:0.3em; display: flex;">
+                        <img src="../img/baltimore-log.svg" style="width: 18px; height: 18px;"><span class="mw-redirect" title="巴爾的摩金鶯">&nbsp;巴爾的摩金鶯</span>
+                    </td>
+                    <td style="text-align:center; border:1px solid #600; background-color:#ffaeb9;">0
+                    </td>
+                    <td style="border-width:0 0 1px 0; border-style:solid;border-color:black;">&nbsp;
+                    </td></tr>
+                    <tr>
+                    <td>&nbsp;
+                    </td>
+                    <td style="text-align:center; background-color:#8b0000; border:1px solid #600;"><span style="color:#ffffff;">4</span>
+                    </td>
+                    <td style="background-color:#ffaeb9; border:1px solid #600; padding-left:0.3em; display: flex;">
+                        <img src="../img/tampa-logo.svg" style="width: 18px; height: 18px;"><span title="坦帕灣光芒">&nbsp;坦帕灣光芒</span>
+                    </td>
+                    <td style="text-align:center; border:1px solid #600; background-color:#ffaeb9;">0
+                    </td>
+                    <td style="border-width:0 1px 1px 0; border-style:solid;border-color:black;">&nbsp;
+                    </td>
+                    <td style="border-width:1px 0 0 1px; border-style:solid;border-color:black;">&nbsp;
+                    </td>
+                    <td style="text-align:center; background-color:#8b0000; border:1px solid #600;"><span style="color:#ffffff;">5</span>
+                    </td>
+                    <td style="background-color:#ffaeb9; border:1px solid #600; padding-left:0.3em; display: flex;">
+                        <img src="../img/rangers.svg" style="width: 18px; height: 18px;"><span title="德州遊騎兵">&nbsp;德州遊騎兵</span>
+                    </td>
+                    <td style="text-align:center; border:1px solid #600; background-color:#ffaeb9;">3
+                    </td>
+                    <td style="border-width:1px 1px 0 1px; border-style:solid;border-color:black;">&nbsp;
+                    </td>
+                    <td style="border-width:0 0 0 1px; border-style:solid;border-color:black;">&nbsp;
+                    </td></tr>
+                    <tr>
+                    <td>&nbsp;
+                    </td>
+                    <td style="text-align:center; background-color:#8b0000; border:1px solid #600;"><span style="color:#ffffff;"> 5</span>
+                    </td>
+                    <td style="background-color:#ffaeb9; border:1px solid #600; padding-left:0.3em; display: flex;">
+                        <img src="../img/rangers.svg" style="width: 18px; height: 18px;"><span title="德州遊騎兵">&nbsp;德州遊騎兵</span>
+                    </td>
+                    <td style="text-align:center; border:1px solid #600; background-color:#ffaeb9;">2
+                    </td>
+                    <td style="border-width:1px 0 0 0; border-style:solid;border-color:black;">&nbsp;
+                    </td>
+                    <td colspan="4">&nbsp;
+                    </td>
+                    <td style="border-width:0 1px 0 0; border-style:solid;border-color:black;">&nbsp;
+                    </td>
+                    <td style="border-width:0 0 1px 1px; border-style:solid;border-color:black;">&nbsp;
+                    </td>
+                    <td style="text-align:center; background-color:#8b0000; border:1px solid #600;"><span style="color:#ffffff;">5</span>
+                    </td>
+                    <td style="background-color:#ffaeb9; border:1px solid #600; padding-left:0.3em; display: flex;">
+                        <img src="../img/rangers.svg" style="width: 18px; height: 18px;"><span title="德州遊騎兵">&nbsp;德州遊騎兵</span>
+                    </td>
+                    <td style="text-align:center; border:1px solid #600; background-color:#ffaeb9;">4
+                    </td>
+                    <td style="border-width:0 0 1px 0; border-style:solid;border-color:black;">&nbsp;
+                    </td></tr>
+                    <tr>
+                    <td colspan="9" align="center"><span title="美國聯盟">美國聯盟</span>
+                    </td>
+                    <td style="border-width:0 1px 0 0; border-style:solid;border-color:black;">&nbsp;
+                    </td>
+                    <td style="border-width:1px 0 0 1px; border-style:solid;border-color:black;">&nbsp;
+                    </td>
+                    <td style="text-align:center; background-color:#8b0000; border:1px solid #600;"><span style="color:#ffffff;"> 2</span>
+                    </td>
+                    <td style="background-color:#ffaeb9; border:1px solid #600; padding-left:0.3em; display: flex;">
+                        <img src="../img/astro.svg" style="width: 18px; height: 18px; "><span title="休士頓太空人">&nbsp;休士頓太空人</span>
+                    </td>
+                    <td style="text-align:center; border:1px solid #600; background-color:#ffaeb9;">3
+                    </td>
+                    <td style="border-width:0 0 0 0; border-style:solid;border-color:black;">&nbsp;
+                    </td>
+                    <td style="border-width:1px 1px 1px 0; border-style:solid;border-color:black;" rowspan="8">&nbsp;
+                    </td></tr>
+                    <tr>
+                    <td>&nbsp;
+                    </td>
+                    <td colspan="3" align="center">&nbsp;
+                    </td>
+                    <td>&nbsp;
+                    </td>
+                    <td style="border-width:0 0 1px 0; border-style:solid;border-color:black;">&nbsp;
+                    </td>
+                    <td style="text-align:center; background-color:#8b0000; border:1px solid #600;"><span style="color:#ffffff;">2</span>
+                    </td>
+                    <td style="background-color:#ffaeb9; border:1px solid #600; padding-left:0.3em; display: flex;">
+                        <img src="../img/astro.svg" style="width: 18px; height: 18px;"><span title="休士頓太空人">&nbsp;休士頓太空人</span>
+                    </td>
+                    <td style="text-align:center; border:1px solid #600; background-color:#ffaeb9;">3
+                    </td>
+                    <td style="border-width:0 1px 1px 0; border-style:solid;border-color:black;">&nbsp;
+                    </td>
+                    <td style="border-width:0 0 0 1px; border-style:solid;border-color:black;">&nbsp;
+                    </td></tr>
+                    <tr>
+                    <td>&nbsp;
+                    </td>
+                    <td style="text-align:center; background-color:#8b0000; border:1px solid #600;"><span style="color:#ffffff;">3</span>
+                    </td>
+                    <td style="background-color:#ffaeb9; border:1px solid #600; padding-left:0.3em; display: flex;">
+                        <img src="../img/twins-logo.svg" style="width: 18px; height: 18px;"><span class="mw-redirect" title="明尼蘇達雙城">&nbsp;明尼蘇達雙城</span>
+                    </td>
+                    <td style="text-align:center; border:1px solid #600; background-color:#ffaeb9;">2
+                    </td>
+                    <td style="border-width:0 1px 1px 0; border-style:solid;border-color:black;">&nbsp;
+                    </td>
+                    <td style="border-width:1px 0 0 1px; border-style:solid;border-color:black;">&nbsp;
+                    </td>
+                    <td style="text-align:center; background-color:#8b0000; border:1px solid #600;"><span style="color:#ffffff;">3</span>
+                    </td>
+                    <td style="background-color:#ffaeb9; border:1px solid #600; padding-left:0.3em; display: flex;">
+                        <img src="../img/twins-logo.svg" style="width: 18px; height: 18px;"><span class="mw-redirect" title="明尼蘇達雙城">&nbsp;明尼蘇達雙城</span>
+                    </td>
+                    <td style="text-align:center; border:1px solid #600; background-color:#ffaeb9;">1
+                    </td>
+                    <td style="border-width:1px 0 0 0; border-style:solid;border-color:black;">&nbsp;
+                    </td></tr>
+                    <tr>
+                    <td>&nbsp;
+                    </td>
+                    <td style="text-align:center; background-color:#8b0000; border:1px solid #600;"><span style="color:#ffffff;">6</span>
+                    </td>
+                    <td style="background-color:#ffaeb9; border:1px solid #600; padding-left:0.3em; display: flex;">
+                        <img src="../img/jays.svg" style="width: 18px; height: 18px;"><span title="多倫多藍鳥">&nbsp;多倫多藍鳥</span>
+                    <td style="text-align:center; border:1px solid #600; background-color:#ffaeb9;">0
+                    </td>
+                    <td style="border-width:1px 0 0 0; border-style:solid;border-color:black;">&nbsp;
+                    </td>
+                    <td colspan="9">&nbsp;
+                    </td>
+                    <td style="border-width:0 0 0 0; border-style:solid;border-color:black;">&nbsp;
+                    </td>
+                    <td style="text-align:center; background-color:#8b0000; border:1px solid #600;"><span style="color:#ffffff;">A5</span>
+                    </td>
+                    <td style="background-color:#ffaeb9; border:1px solid #600; padding-left:0.3em; display: flex;">
+                        <img src="../img/rangers.svg" style="width: 18px; height: 18px;"><span title="德州遊騎兵">&nbsp;德州遊騎兵</span>
+                    <td style="text-align:center; border:1px solid #600; background-color:#ffaeb9;">4
+                    </td></tr>
+                    <tr>
+                    <td colspan="14">&nbsp;
+                    </td>
+                    <td style="border-width:0 0 0 0; border-style:solid;border-color:black;">&nbsp;
+                    </td>
+                    <td style="text-align:center; background-color:#00008b; border:1px solid #006;"><span style="color:#ffffff;">N6</span>
+                    </td>
+                    <td style="background-color:#87cefa; border:1px solid #006; padding-left:0.3em; display: flex;">
+                        <img src="../img/d-backs-logo.svg" style="width: 18px; height: 18px;"><span title="亞利桑那響尾蛇">&nbsp;亞利桑那響尾蛇</span>
+                    </td>
+                    <td style="text-align:center; background-color:#87cefa; border:1px solid #006;">1
+                    </td></tr>
+                    <tr>
+                    <td>&nbsp;
+                    </td>
+                    <td colspan="3" align="center">&nbsp;
+                    </td>
+                    <td>&nbsp;
+                    </td>
+                    <td style="border-width:0 0 1px 0; border-style:solid;border-color:black;">&nbsp;
+                    </td>
+                    <td style="text-align:center; background-color:#00008b; border:1px solid #006;"><span style="color:#ffffff;">1</span>
+                    </td>
+                    <td style="background-color:#87cefa; border:1px solid #006; padding-left:0.3em; display: flex;">
+                        <img src="../img/braves-logo.svg" style="width: 18px; height: 18px;"><span title="亞特蘭大勇士">&nbsp;亞特蘭大勇士</span>
+                    </td>
+                    <td style="text-align:center; background-color:#87cefa; border:1px solid #006;">1
+                    </td>
+                    <td style="border-width:0 0 1px 0; border-style:solid;border-color:black;">&nbsp;
+                    </td></tr>
+                    <tr>
+                    <td>&nbsp;
+                    </td>
+                    <td style="text-align:center; background-color:#00008b; border:1px solid #006;"><span style="color:#ffffff;">4</span>
+                    </td>
+                    <td style="background-color:#87cefa; border:1px solid #006; padding-left:0.3em; display: flex;">
+                        <img src="../img/d-backs-logo.svg" style="width: 18px; height: 18px;"><span title="">&nbsp;費城費城人</span>
+                    </td>
+                    <td style="text-align:center; background-color:#87cefa; border:1px solid #006;">2
+                    </td>
+                    <td style="border-width:0 1px 1px 0; border-style:solid;border-color:black;">&nbsp;
+                    </td>
+                    <td style="border-width:1px 0 0 1px; border-style:solid;border-color:black;">&nbsp;
+                    </td>
+                    <td style="text-align:center; background-color:#00008b; border:1px solid #006;"><span style="color:#ffffff;"> 4</span>
+                    </td>
+                    <td style="background-color:#87cefa; border:1px solid #006; padding-left:0.3em; display: flex;">
+                        <img src="../img/d-backs-logo.svg" style="width: 18px; height: 18px;"><span title="">&nbsp;費城費城人</span>
+                    </td>
+                    <td style="text-align:center; background-color:#87cefa; border:1px solid #006;">3
+                    </td>
+                    <td style="border-width:1px 1px 0 0; border-style:solid;border-color:black;">&nbsp;
+                    </td>
+                    <td style="border-width:0 0 0 1px; border-style:solid;border-color:black;">&nbsp;
+                    </td></tr>
+                    <tr>
+                    <td>&nbsp;
+                    </td>
+                    <td style="text-align:center; background-color:#00008b; border:1px solid #006;"><span style="color:#ffffff;"> 5</span>
+                    </td>
+                    <td style="background-color:#87cefa; border:1px solid #006; padding-left:0.3em; display: flex;">
+                        <img src="../img/miami-logo.svg" style="width: 18px; height: 18px;"><span title="邁阿密馬林魚">&nbsp;邁阿密馬林魚</span>
+                    </td>
+                    <td style="text-align:center; background-color:#87cefa; border:1px solid #006;">0
+                    </td>
+                    <td style="border-width:1px 0 0 0; border-style:solid;border-color:black;">&nbsp;
+                    </td>
+                    <td colspan="4">&nbsp;
+                    </td>
+                    <td style="border-width:0 1px 0 0; border-style:solid;border-color:black;">&nbsp;
+                    </td>
+                    <td style="border-width:0 0 0 1px; border-style:solid;border-color:black;">&nbsp;
+                    </td>
+                    <td style="text-align:center; background-color:#00008b; border:1px solid #006;"><span style="color:#ffffff;">4</span>
+                    </td>
+                    <td style="background-color:#87cefa; border:1px solid #006; padding-left:0.3em; display: flex;">
+                        <img src="../img/phily-logo.svg" style="width: 18px; height: 18px;"><span title="">&nbsp;費城費城人</span>
+                    </td>
+                    <td style="text-align:center; background-color:#87cefa; border:1px solid #006;">3
+                    </td>
+                    <td style="border-width:0 0 1px 0; border-style:solid;border-color:black;">&nbsp;
+                    </td></tr>
+                    <tr>
+                    <td colspan="9" align="center"><span title="國家聯盟">國家聯盟</span>
+                    </td>
+                    <td style="border-width:0 1px 0 0; border-style:solid;border-color:black;">&nbsp;
+                    </td>
+                    <td style="border-width:1px 0 0 1px; border-style:solid;border-color:black;">&nbsp;
+                    </td>
+                    <td style="text-align:center; background-color:#00008b; border:1px solid #006;"><span style="color:#ffffff;"> 6</span>
+                    </td>
+                    <td style="background-color:#87cefa; border:1px solid #006; padding-left:0.3em; display: flex;">
+                        <img src="../img/d-backs-logo.svg" style="width: 18px; height: 18px;"><span title="亞利桑那響尾蛇">&nbsp;亞利桑那響尾蛇</span>
+                    </td>
+                    <td style="text-align:center; background-color:#87cefa; border:1px solid #006;">4
+                    </td>
+                    <td style="border-width:1px 0 0 0; border-style:solid;border-color:black;">&nbsp;
+                    </td></tr>
+                    <tr>
+                    <td>&nbsp;
+                    </td>
+                    <td colspan="3" align="center">&nbsp;
+                    </td>
+                    <td>&nbsp;
+                    </td>
+                    <td style="border-width:0 0 1px 0; border-style:solid;border-color:black;">&nbsp;
+                    </td>
+                    <td style="text-align:center; background-color:#00008b; border:1px solid #006;"><span style="color:#ffffff;">2</span>
+                    </td>
+                    <td style="background-color:#87cefa; border:1px solid #006; padding-left:0.3em;">
+                        <img src="../img/dodges-log.svg" style="width: 18px; height: 18px;"><span class="mw-redirect" title="洛杉磯道奇">&nbsp;洛杉磯道奇</span>
+                    </td>
+                    <td style="text-align:center; background-color:#87cefa; border:1px solid #006;">0
+                    </td>
+                    <td style="border-width:0 1px 1px 0; border-style:solid;border-color:black;">&nbsp;
+                    </td>
+                    <td style="border-width:0 0 0 1px; border-style:solid;border-color:black;">&nbsp;
+                    </td></tr>
+                    <tr>
+                    <td>&nbsp;
+                    </td>
+                    <td style="text-align:center; background-color:#00008b; border:1px solid #006;"><span style="color:#ffffff;"> 3</span>
+                    </td>
+                    <td style="background-color:#87cefa; border:1px solid #006; padding-left:0.3em; display: flex;">
+                        <img src="../img/brewer-logo.svg" style="width: 18px; height: 18px;"><span title="密爾瓦基釀酒人">&nbsp;密爾瓦基釀酒人</span>
+                    </td>
+                    <td style="text-align:center; background-color:#87cefa; border:1px solid #006;">0
+                    </td>
+                    <td style="border-width:0 1px 1px 0; border-style:solid;border-color:black;">&nbsp;
+                    </td>
+                    <td style="border-width:1px 0 0 1px; border-style:solid;border-color:black;">&nbsp;
+                    </td>
+                    <td style="text-align:center; background-color:#00008b; border:1px solid #006;"><span style="color:#ffffff;">6</span>
+                    </td>
+                    <td style="background-color:#87cefa; border:1px solid #006; padding-left:0.3em; display: flex;">
+                        <img src="../img/d-backs-logo.svg" style="width: 18px; height: 18px;"><span title="亞利桑那響尾蛇">&nbsp;亞利桑那響尾蛇</span>
+                    </td>
+                    <td style="text-align:center; background-color:#87cefa; border:1px solid #006;">3
+                    </td>
+                    <td style="border-width:1px 0 0 0; border-style:solid;border-color:black;">&nbsp;
+                    </td></tr>
+                    <tr>
+                    <td>&nbsp;
+                    </td>
+                    <td style="text-align:center; background-color:#00008b; border:1px solid #006;"><span style="color:#ffffff;">6</span>
+                    </td>
+                    <td style="background-color:#87cefa; border:1px solid #006; padding-left:0.3em; display: flex;">
+                        <img src="../img/d-backs-logo.svg" style="width: 18px; height: 18px;"><span title="亞利桑那響尾蛇">&nbsp;亞利桑那響尾蛇</span>
+                    </td>
+                    <td style="text-align:center; background-color:#87cefa; border:1px solid #006;">2
+                    </td>
+                    <td style="border-width:1px 0 0 0; border-style:solid;border-color:black;">&nbsp;
+                    </td>
+                    <td colspan="14">&nbsp;
+                    </td>
+                    <td style="border-width:0 0 0 0; border-style:solid;border-color:black;">&nbsp;
+                    </td></tr></tbody></table>
+            </div>
+            <br>
+            <h2 class="inarticle" id="fight">季後賽戰況</h2>
+            <br>
+            <div class="content inarticle">
+                <p class="space">&nbsp;</p>
+                <p id="content-1">
+                    2023 MLB（Major League Baseball）美國職棒大聯盟季後賽分區冠軍賽台灣時間10月16日開打！
+                    美國聯盟部分上演德州內戰，由休士頓太空人迎戰德州遊騎兵；國聯則由費城費城人交手亞利桑那響尾蛇。
+                </p>
+                <p class="space">&nbsp;</p>
+            </div>
+
+            <div id="alnlcs"><img src="../img/alcsnlcs.jpeg"></div>
+
+            <div class="content inarticle">
+                <p class="space">&nbsp;</p>
+                <p id="content-3">
+                    美聯分區冠軍賽最後一戰，此役遊騎兵展現出強大進攻火力，靠著Adolis García繳出5支4猛打賞，
+                    其中包含雙響砲包辦球隊5分打點，加上Corey Seager、Nathaniel Lowe也都有開轟紀錄，
+                    讓比賽在6局時幾乎定調，終場遊騎兵也毫無懸念以11比4轟垮太空人，睽違12年再殺進世界大賽。
+                </p>
+                <p class="space">&nbsp;</p>
+            </div>
+
+            <div id="adog7">
+                <iframe width="850" height="400" 
+            src="https://www.youtube.com/embed/JBgIJOIkxY0?si=t4bQNP2MVr6AWhsc?mute=1" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+
+            <div class="content inarticle">
+                <p class="space">&nbsp;</p>
+                <p id="content-4">
+                    國聯分區冠軍賽第七戰，前4局費城人雖靠著Alec Bohm陽春砲及Bryson Stott長打取得1分領先，
+                    但響尾蛇在Corbin Carroll的安打、盜壘、高飛犧牲打帶動之下，在7局上時反倒取得2分領先，
+                    加上後續5位牛棚投手輪番壓制，終場響尾蛇就以4比2咬傷費城人，繼2001年後再次進入世界大賽。
+                </p>
+                <p class="space">&nbsp;</p>
+            </div>
+
+            <div id="nlcsg7">
+                <iframe width="850" height="400" 
+            src="https://www.youtube.com/embed/POb3QIVq0AU?si=VJRAjPY21meyz7Zg?mute=1" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            
+            <div class="content inarticle">
+                <p class="space">&nbsp;</p>
+                <p id="content-2">
+                    2023 MLB美國職棒大聯盟季後賽世界大賽台灣時間於10月28日開打！
+                    率先拿到門票的德州遊騎兵享有主場優勢，第1、2、6、7戰將於全球人壽球場（Globe Life Field）開打。
+                    遊騎兵對手確定！亞利桑那響尾蛇擊敗費城人晉級，兩支外卡球隊一路拚戰上來，將會師世界大賽。
+                </p>
+                <p class="space">&nbsp;</p>
+            </div>
+            <div id="texvsdbacks"><img src="../img/texvsdbacks.png"></div>
+
+            <div class="content inarticle">
+                <p class="space">&nbsp;</p>
+                <p id="content-5">
+                    遊騎兵在世界大賽第5戰完封響尾蛇，勇奪隊史首座世界大賽冠軍，也成為史上最低種子序封王的球隊。
+                    遊騎兵例行賽僅90勝、在過去冠軍得主中名列史上第6低，今年以外卡第2位、也就是第5種子之姿晉級季後賽，
+                    成為自2012年季後賽擴編後、種子序最低的冠軍。
+                </p>
+                <p class="space">&nbsp;</p>
+            </div>
+
+            <div id="champion">
+                <iframe width="850" height="400" 
+                src="https://www.youtube.com/embed/U7HCCY4AiDw?si=v_4_0-7z91zmRurb?mute=1" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+
+            <br><br>
+        </article>
+        <div class="bot-bg"><img src="../img/mlbad.png"></div>
+
+    </div>
+
+    <script src="post.js"></script>
+</body>

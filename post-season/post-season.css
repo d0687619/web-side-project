@@ -1,0 +1,283 @@
+body {
+    margin: 0;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: rgb(236,236,236); */
+    background-image: url("../img/background.jpeg");
+    background-repeat: repeat;
+    /* background-size:100%; */
+  }
+  
+  html {
+    height: 100%
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .topnav {
+    background-color: #C0111F;
+    overflow: hidden;
+    /* border: black 2px solid; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+  }
+  
+  .topnav a {
+    float: left;
+    color: gainsboro;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 23px;
+    font-weight: bolder;
+    text-shadow: 1px 1px black;
+    /* border: black 2px solid; */
+    margin-left: 20px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    color: whitesmoke;
+  
+  }
+  
+  
+  div>a>img {
+    min-height: 50px;
+    max-height: 50px;
+    top: auto;
+    /* border: 2px black solid; */
+  }
+  
+  #logocom {
+    margin-left: auto;
+    /* border: 2px solid black; */
+  
+  }
+  
+  #goandtake img {
+    max-height: 56px;
+    /* border: black 2px solid; */
+  }
+  
+  #goandtake {
+    flex: 1 1 auto;
+    align-items: center;
+  }
+  
+  #navabove {
+    display: flex;
+    height: 56px;
+    justify-content: flex-end;
+    flex: 99 1 45%
+  }
+
+  .outercontainer {
+    /* border: red 3px solid; */
+    max-width: 1200px;
+    margin: auto;
+    background-color: #003278;
+  }
+
+  article{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    background-color: #e5e5e5f4;
+    /* border: yellow 2px solid; */
+    
+  }
+
+  .inarticle{
+    flex: 10;
+    /* border: black 2px solid; */
+    margin: auto 10px;
+    font-size: 2em;
+  }
+
+  .content{
+    top: 60px;
+    display: flex;
+    /* position: absolute; */
+  }
+
+  .content p{
+    /* flex: 1; */
+    display: block;
+    /* border: red solid 2px; */
+  }
+  .space{
+    flex: 1;
+  }
+  #content{
+    line-height: 180%;
+    font-size: 24px;
+    flex: 8;
+  }
+  
+  #content-1,#content-2,#content-3,#content-4,#content-5{
+    line-height: 180%;
+    font-size: 24px;
+    flex: 8;
+  }
+
+
+.team{
+    justify-content: center;
+    display: flex;
+}
+
+.t1{
+    /* border: red solid 2px; */
+    /* border-radius: 8px; */
+    flex: 4;
+    background-color: white;
+    /* background-color: #C0111F; */
+}
+
+#al{
+  border-radius: 8px 0 0 8px;
+  /* background-image: url("../img/al-league.png"); */
+  background-repeat: no-repeat;
+  background-size: contain;
+  
+}
+
+#nl{
+  margin-left: auto;
+  border-radius: 0 8px 8px 0;
+  /* background-image: url("../img/nl-league.png"); */
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.empty{
+    flex: 1;
+}
+
+.t1 ol li{
+    font-size: 1.2em;
+}
+
+.t1 ol{
+    line-height: 200%;
+}
+
+.t1 h3{
+    margin-top: 5px;
+    font-size: 1.5em;
+    /* border: red 2px solid; */
+}
+
+.al-team{
+    display: flex;
+}
+
+.team-img{
+    width: 35px;
+    height: 35px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+/* #bracket{
+    border: red solid 2px;
+} */
+
+#bracket-tb{
+    /* border: yellow 2px solid; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#bracket-img img{
+  border-radius: 8px;
+  max-width: 980px;
+}
+
+#bracket-img{
+  text-align: center;
+}
+
+#texvsdbacks img,#alnlcs img{
+  border-radius: 8px;
+  max-width: 980px;
+}
+
+#texvsdbacks,#alnlcs,#adog7,#nlcsg7,#champion{
+  text-align: center;
+}
+
+.top-bg{
+  /* border: rebeccapurple 2px solid; */
+  text-align: center;
+}
+
+.top-bg img{
+  max-width: 1100px;
+  /* max-width: 1500px; */
+  height: auto;
+}
+
+.bot-bg{
+  /* border: rebeccapurple 2px solid; */
+  text-align: center;
+}
+
+.bot-bg img{
+  max-width: 100%;
+  /* max-width: 1500px; */
+  height: auto;
+}
+
+#mySidenav{
+  position: fixed;
+  top: 40%;
+}
+
+#mySidenav a {
+  position: absolute;
+  left: -70px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+  left: 0;
+}
+
+#about {
+  top: 20px;
+  background-color: darkred;
+  
+}
+
+#blog {
+  top: 80px;
+  background-color: darkred;
+}
+
+#projects {
+  top: 140px;
+  background-color:  darkred;
+}
+
+#contact {
+  top: 200px;
+  background-color: darkred;
+}
+
+
+
+
+
+
+
